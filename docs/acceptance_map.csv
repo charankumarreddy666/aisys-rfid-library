@@ -1,0 +1,11 @@
+﻿AC,Scenario,How to demonstrate / test
+AC01,"Import spreadsheet, reject invalid, find duplicates, reconcile",scripts\demo_ac01_migration.cmd; MigrationTests
+AC02,"Create/locate item, validate, associate mock tag, show relationship",RFID console > Tag an item; RfidTests
+AC03,Check-out/renew/check-in via NCIP/SIP2 with audit history,"POST /interop/ncip, /interop/sip2; InteropTests"
+AC04,Block reference item / blocked member / fine over limit,"Circulation desk with BCR..., M0003, M0004; CirculationTests"
+AC05,Handheld inventory: missing + misplaced with visible/audible events,RFID console > Handheld shelf inventory; RfidTests
+AC06,"Gate unauthorised removal, accession, CCTV image, email queued",RFID console > Security gate; RfidTests
+AC07,Smart-card login and role enforcement,/login/smartcard/; test_smartcard_login_and_rbac
+AC08,Dashboard and filterable reports,"Dashboard, Reports; test_dashboard_reports_and_csv"
+AC09,"Offline install, update, rollback","scripts\install_offline.cmd, scripts\demo_ac09_offline_update.cmd; UpdateTests"
+AC10,"Restore after failed migration, data intact",scripts\demo_ac10_restore.cmd; MigrationTests
