@@ -1,0 +1,15 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe manage.py import_spreadsheet C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\run_data\sample_20000.xlsx --commit
+
+{
+  "batch": 2,
+  "status": "COMMITTED",
+  "source_rows": 20000,
+  "valid": 19001,
+  "rejected": 800,
+  "duplicates": 199,
+  "migrated": 19001,
+  "target_items_in_batch": 19001,
+  "source_equals_valid_plus_rejected_plus_duplicates": true,
+  "target_matches_migrated": true
+}
+Reports are in the data/reports folder (batch_2_*).

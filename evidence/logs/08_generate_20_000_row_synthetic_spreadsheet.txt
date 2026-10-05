@@ -1,0 +1,3 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe scripts/gen_sample_data.py C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\run_data\sample_20000.xlsx 20000
+
+Wrote 20000 synthetic rows to C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\run_data\sample_20000.xlsx

@@ -1,0 +1,10 @@
+batch: 2
+status: COMMITTED
+source_rows: 20000
+valid: 19001
+rejected: 800
+duplicates: 199
+migrated: 19001
+target_items_in_batch: 19001
+source_equals_valid_plus_rejected_plus_duplicates: True
+target_matches_migrated: True
