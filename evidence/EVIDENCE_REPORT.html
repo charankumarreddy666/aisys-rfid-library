@@ -1,0 +1,164 @@
+<!doctype html><meta charset=utf-8><title>AISYS evidence report</title><style>body{font:15px Segoe UI,Arial;margin:2rem;max-width:1200px}table{border-collapse:collapse;width:100%;margin:.5rem 0 1.5rem}td,th{border:1px solid #ccd;padding:.35rem .5rem;text-align:left;vertical-align:top}th{background:#eef}.b{padding:0 .5rem;border-radius:3px;color:#fff}.pass{background:#1b6e3f}.fail,.no{background:#a8261d}.warn{background:#a86b00}img{max-width:100%;border:1px solid #bbb}figure{margin:1rem 0}figcaption{font-weight:600}</style>
+<h1>AISYS RFID Library - automated evidence report</h1><p>Generated 2026-10-05 10:28:45 in 284 s. Python 3.14.4, Django 5.2.17. Overall: <span class="b fail">FAIL</span> (all data synthetic; isolated database in evidence/run_data)</p>
+<h2>Acceptance scenarios</h2><table><tr><th>ID</th><th>Scenario</th><th>Result</th><th>Checks</th></tr>
+<tr><td>AC01</td><td>Spreadsheet import, validation, duplicates, reconciliation</td><td><span class="b pass">PASS</span></td><td>6/6</td></tr>
+<tr><td>AC02</td><td>Item + mock tag relationship</td><td><span class="b fail">FAIL</span></td><td>4/5</td></tr>
+<tr><td>AC03</td><td>Check-out/renew/check-in via NCIP/SIP2 with history</td><td><span class="b pass">PASS</span></td><td>8/8</td></tr>
+<tr><td>AC04</td><td>Blocks: reference item, blocked member, fine limit</td><td><span class="b pass">PASS</span></td><td>6/6</td></tr>
+<tr><td>AC05</td><td>Handheld inventory: missing/misplaced + confirmations</td><td><span class="b pass">PASS</span></td><td>4/4</td></tr>
+<tr><td>AC06</td><td>Gate event, accession, CCTV, email</td><td><span class="b pass">PASS</span></td><td>7/7</td></tr>
+<tr><td>AC07</td><td>Smart-card login and role permissions</td><td><span class="b pass">PASS</span></td><td>12/12</td></tr>
+<tr><td>AC08</td><td>Dashboard and filterable reports</td><td><span class="b fail">FAIL</span></td><td>9/16</td></tr>
+<tr><td>AC09</td><td>Offline install, update and rollback</td><td><span class="b pass">PASS</span></td><td>3/3</td></tr>
+<tr><td>AC10</td><td>Restore after failed migration</td><td><span class="b pass">PASS</span></td><td>2/2</td></tr>
+</table><h2>Pipeline steps</h2><table><tr><th>Step</th><th>Requirement</th><th>Result</th><th>Seconds</th><th>Log</th></tr>
+<tr><td>Environment captured</td><td>NFR03</td><td><span class="b pass">PASS</span></td><td>0</td><td><a href='logs/00_environment.txt'>open</a></td></tr>
+<tr><td>Lint (ruff)</td><td>NFR06</td><td><span class="b pass">PASS</span></td><td>1.3</td><td><a href='logs/01_lint_ruff.txt'>open</a></td></tr>
+<tr><td>Dependency vulnerability scan (pip-audit)</td><td>NFR02/NFR04</td><td><span class="b pass">PASS</span></td><td>29.1</td><td><a href='logs/02_dependency_vulnerability_scan_pip_audit.txt'>open</a></td></tr>
+<tr><td>Software bill of materials</td><td>NFR04</td><td><span class="b pass">PASS</span></td><td>0.2</td><td><a href='logs/03_software_bill_of_materials.txt'>open</a></td></tr>
+<tr><td>Migrations are up to date</td><td>NFR06</td><td><span class="b pass">PASS</span></td><td>7.6</td><td><a href='logs/04_migrations_are_up_to_date.txt'>open</a></td></tr>
+<tr><td>Automated test suite</td><td>NFR05</td><td><span class="b pass">PASS</span></td><td>85.3</td><td><a href='logs/05_automated_test_suite.txt'>open</a></td></tr>
+<tr><td>Create evidence database</td><td>FR11</td><td><span class="b pass">PASS</span></td><td>1.4</td><td><a href='logs/06_create_evidence_database.txt'>open</a></td></tr>
+<tr><td>Seed synthetic demo data</td><td>Stage 3</td><td><span class="b pass">PASS</span></td><td>4.4</td><td><a href='logs/07_seed_synthetic_demo_data.txt'>open</a></td></tr>
+<tr><td>Generate 20,000-row synthetic spreadsheet</td><td>FR10</td><td><span class="b pass">PASS</span></td><td>2.9</td><td><a href='logs/08_generate_20_000_row_synthetic_spreadsheet.txt'>open</a></td></tr>
+<tr><td>AC01 dry-run import (nothing written)</td><td>FR10</td><td><span class="b pass">PASS</span></td><td>5.3</td><td><a href='logs/09_ac01_dry_run_import_nothing_written.txt'>open</a></td></tr>
+<tr><td>AC01 committed import with reconciliation</td><td>FR10</td><td><span class="b pass">PASS</span></td><td>8.7</td><td><a href='logs/10_ac01_committed_import_with_reconciliation.txt'>open</a></td></tr>
+<tr><td>AC01 rollback of the batch</td><td>FR10</td><td><span class="b pass">PASS</span></td><td>46.2</td><td><a href='logs/11_ac01_rollback_of_the_batch.txt'>open</a></td></tr>
+<tr><td>AC10 failed migration then restore from backup</td><td>NFR01</td><td><span class="b pass">PASS</span></td><td>7.0</td><td><a href='logs/12_ac10_failed_migration_then_restore_from_backup.txt'>open</a></td></tr>
+<tr><td>AC09 build signed update package</td><td>FR12</td><td><span class="b pass">PASS</span></td><td>0.7</td><td><a href='logs/13_ac09_build_signed_update_package.txt'>open</a></td></tr>
+<tr><td>AC09 apply offline update</td><td>FR12</td><td><span class="b pass">PASS</span></td><td>0.9</td><td><a href='logs/14_ac09_apply_offline_update.txt'>open</a></td></tr>
+<tr><td>AC09 roll back the update</td><td>FR12</td><td><span class="b pass">PASS</span></td><td>1.0</td><td><a href='logs/15_ac09_roll_back_the_update.txt'>open</a></td></tr>
+<tr><td>AC09 download wheels (one-time, needs internet)</td><td>FR12</td><td><span class="b pass">PASS</span></td><td>1.2</td><td><a href='logs/16_ac09_download_wheels_one_time_needs_internet.txt'>open</a></td></tr>
+<tr><td>AC09 create clean virtual environment</td><td>NFR03</td><td><span class="b pass">PASS</span></td><td>6.4</td><td><a href='logs/17_ac09_create_clean_virtual_environment.txt'>open</a></td></tr>
+<tr><td>AC09 install with --no-index (no internet)</td><td>FR12</td><td><span class="b pass">PASS</span></td><td>13.7</td><td><a href='logs/18_ac09_install_with_no_index_no_internet.txt'>open</a></td></tr>
+<tr><td>AC09 offline-installed app passes system check</td><td>FR12</td><td><span class="b pass">PASS</span></td><td>0.8</td><td><a href='logs/19_ac09_offline_installed_app_passes_system_check.txt'>open</a></td></tr>
+<tr><td>Start web server</td><td>NFR07</td><td><span class="b pass">PASS</span></td><td>0</td><td><a href='logs/server.log'>open</a></td></tr>
+<tr><td>Live API exchanges (NCIP, SIP2, gate, inventory, tag)</td><td>FR03/FR05-07</td><td><span class="b pass">PASS</span></td><td>0</td><td><a href='logs/api_exchanges.txt'>open</a></td></tr>
+<tr><td>Browser screenshots + demo video</td><td>D6/D9</td><td><span class="b pass">PASS</span></td><td>0</td><td><a href='logs/server.log'>open</a></td></tr>
+<tr><td>Backup written and verified</td><td>NFR01</td><td><span class="b pass">PASS</span></td><td>0.9</td><td><a href='logs/20_backup_written_and_verified.txt'>open</a></td></tr>
+</table><h2>Individual checks</h2><table><tr><th>Group</th><th>Check</th><th>Result</th><th>Detail</th></tr>
+<tr><td>TESTS</td><td>Automated tests passed (29 tests)</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC01</td><td>Dry run wrote nothing</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC01</td><td>Invalid rows rejected</td><td><span class="b pass">PASS</span></td><td>rejected=800</td></tr>
+<tr><td>AC01</td><td>Duplicates identified</td><td><span class="b pass">PASS</span></td><td>duplicates=199</td></tr>
+<tr><td>AC01</td><td>Source = migrated + rejected + duplicates</td><td><span class="b pass">PASS</span></td><td>20000 = 19001 + 800 + 199</td></tr>
+<tr><td>AC01</td><td>Target count matches migrated count</td><td><span class="b pass">PASS</span></td><td>19001</td></tr>
+<tr><td>AC01</td><td>Rollback restores original item count</td><td><span class="b pass">PASS</span></td><td>[&#x27;8&#x27;] -&gt; [&#x27;8&#x27;]</td></tr>
+<tr><td>AC10</td><td>Partial data appeared after the crash</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC10</td><td>Restore proves original data intact</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC09</td><td>Update applied (version changed)</td><td><span class="b pass">PASS</span></td><td>1.0.1</td></tr>
+<tr><td>AC09</td><td>Rollback restored previous version</td><td><span class="b pass">PASS</span></td><td>1.0.0</td></tr>
+<tr><td>AC09</td><td>Installs from local wheels without internet</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>NFR07</td><td>Health endpoint reports ok</td><td><span class="b pass">PASS</span></td><td>{&quot;status&quot;: &quot;ok&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;database&quot;: &quot;ok&quot;, &quot;items&quot;: 8, &quot;rfid_mode&quot;: &quot;mock&quot;, &quot;lms_online&quot;: true, &quot;time&quot;: &quot;202</td></tr>
+<tr><td>NFR02</td><td>API without key is refused (401)</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC03</td><td>NCIP CheckOutItem returns due date</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC03</td><td>NCIP RenewItem returns new date</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC03</td><td>NCIP CheckInItem succeeds</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC04</td><td>NCIP denies blocked member</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC04</td><td>NCIP denies reference item</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC04</td><td>NCIP denies member over fine limit</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC03</td><td>SIP2 checkout / renew / checkin flow</td><td><span class="b pass">PASS</span></td><td>121NNY 300NNY 101YNN</td></tr>
+<tr><td>AC03</td><td>Auditable history recorded for NCIP/SIP2 (incl. denials)</td><td><span class="b pass">PASS</span></td><td>[&#x27;9 3&#x27;]</td></tr>
+<tr><td>AC06</td><td>Unauthorised removal raises alarm with accession number</td><td><span class="b pass">PASS</span></td><td>{&#x27;duplicate&#x27;: False, &#x27;kind&#x27;: &#x27;UNAUTHORISED_REMOVAL&#x27;, &#x27;alarm&#x27;: True, &#x27;accession_no&#x27;: &#x27;ACC000002&#x27;, &#x27;cctv_image&#x27;: &#x27;EVID-G1.png&#x27;}</td></tr>
+<tr><td>AC06</td><td>Mock CCTV image attached</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC06</td><td>Email notification queued</td><td><span class="b pass">PASS</span></td><td>[&#x27;1&#x27;]</td></tr>
+<tr><td>AC06</td><td>Duplicate gate event ignored</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC06</td><td>Gate decides from cache while LMS offline</td><td><span class="b pass">PASS</span></td><td>{&#x27;duplicate&#x27;: False, &#x27;kind&#x27;: &#x27;UNAUTHORISED_REMOVAL&#x27;, &#x27;alarm&#x27;: True, &#x27;accession_no&#x27;: &#x27;ACC000003&#x27;, &#x27;cctv_image&#x27;: &#x27;EVID-G2.png&#x27;}</td></tr>
+<tr><td>AC05</td><td>Inventory reports missing items</td><td><span class="b pass">PASS</span></td><td>[{&#x27;tag_uid&#x27;: &#x27;E200000000000003&#x27;, &#x27;accession_no&#x27;: &#x27;ACC000003&#x27;, &#x27;title&#x27;: &#x27;Head First Design Patterns&#x27;}, {&#x27;tag_uid&#x27;: &#x27;E200000000000004&#x27;, &#x27;accession_no&#x27;: &#x27;ACC000004&#x27;, &#x27;title&#x27;: &#x27;The Pragmatic Programmer&#x27;}]</td></tr>
+<tr><td>AC05</td><td>Inventory reports misplaced items</td><td><span class="b pass">PASS</span></td><td>[{&#x27;tag_uid&#x27;: &#x27;E200000000000005&#x27;, &#x27;accession_no&#x27;: &#x27;ACC000005&#x27;, &#x27;title&#x27;: &#x27;Database System Concepts&#x27;, &#x27;belongs_on&#x27;: &#x27;B-02&#x27;}]</td></tr>
+<tr><td>AC05</td><td>Visible + audible confirmation events recorded</td><td><span class="b pass">PASS</span></td><td>[&#x27;2 1&#x27;]</td></tr>
+<tr><td>AC02</td><td>API validates record and links tag</td><td><span class="b pass">PASS</span></td><td>{&quot;tag_uid&quot;: &quot;E2009999999999AA&quot;, &quot;accession_no&quot;: &quot;ACC000008&quot;, &quot;title&quot;: &quot;Encyclopaedia of Library Science&quot;}</td></tr>
+<tr><td>AC02</td><td>API refuses unknown accession number</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Smart-card login works (viewer1)</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Viewer role: circulation denied (403)</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Viewer role: system page denied (403)</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Viewer role: reports allowed</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Circulation role: desk allowed, reports denied</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Unknown smart card is refused</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Dashboard shows statistics</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Report &#x27;tagged_items&#x27; renders</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Report &#x27;members&#x27; renders</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Report &#x27;circulation&#x27; renders</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Report &#x27;operators&#x27; renders</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Report &#x27;rfid_clients&#x27; renders</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Report &#x27;gate_events&#x27; renders</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Report &#x27;fines&#x27; renders</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC08</td><td>Filtered report exports to CSV</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>FR11</td><td>System page (health, versions, audit) available to admin</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Password login works</td><td><span class="b pass">PASS</span></td><td>http://127.0.0.1:8765/</td></tr>
+<tr><td>AC02</td><td>Net cataloguing pre-fills the title form</td><td><span class="b fail">FAIL</span></td><td></td></tr>
+<tr><td>AC02</td><td>UI links tag to the validated item</td><td><span class="b pass">PASS</span></td><td>Tag E200AAAA00000001 is linked to EVID0001 - Evidence Run Title.</td></tr>
+<tr><td>AC02</td><td>UI refuses tagging an unknown record</td><td><span class="b pass">PASS</span></td><td>No catalogue record with that accession number - catalogue the item first. [ITEM_NOT_FOUND]</td></tr>
+<tr><td>AC03</td><td>UI check-out succeeds</td><td><span class="b pass">PASS</span></td><td>Checked out Clean Code to Demo Member 1. Due 19 Oct 2026.</td></tr>
+<tr><td>AC03</td><td>UI renewal succeeds</td><td><span class="b pass">PASS</span></td><td>Renewed. New due date 02 Nov 2026.</td></tr>
+<tr><td>AC03</td><td>UI check-in succeeds</td><td><span class="b pass">PASS</span></td><td>Checked in Clean Code.</td></tr>
+<tr><td>AC04</td><td>UI blocks reference item</td><td><span class="b pass">PASS</span></td><td>Not allowed: Reference items cannot be borrowed. [REFERENCE_ITEM]</td></tr>
+<tr><td>AC04</td><td>UI blocks blocked member</td><td><span class="b pass">PASS</span></td><td>Not allowed: Library card suspended (demo) [MEMBER_BLOCKED]</td></tr>
+<tr><td>AC04</td><td>UI blocks fine over limit</td><td><span class="b pass">PASS</span></td><td>Not allowed: Outstanding fines 75 exceed the limit 50.00. [FINE_LIMIT_EXCEEDED]</td></tr>
+<tr><td>AC05</td><td>UI inventory lists missing and misplaced</td><td><span class="b pass">PASS</span></td><td>Shelf A-01: expected 5, scanned 3, missing 3, misplaced 1, unknown 0.</td></tr>
+<tr><td>AC06</td><td>UI gate event raises alarm</td><td><span class="b pass">PASS</span></td><td>ALARM: UNAUTHORISED_REMOVAL - accession ACC000004. CCTV image saved and e-mail queued.</td></tr>
+<tr><td>AC06</td><td>UI ignores duplicate gate event</td><td><span class="b pass">PASS</span></td><td>Duplicate event ignored (already processed).</td></tr>
+<tr><td>AC07</td><td>Smart-card login works (viewer)</td><td><span class="b pass">PASS</span></td><td>http://127.0.0.1:8765/</td></tr>
+<tr><td>AC07</td><td>Viewer cannot open Circulation (403)</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Viewer cannot open System (403)</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Viewer can open Reports</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>AC07</td><td>Circulation role can open desk but not reports</td><td><span class="b pass">PASS</span></td><td></td></tr>
+<tr><td>UI</td><td>Browser step &#x27;s_roles&#x27; completed</td><td><span class="b fail">FAIL</span></td><td>Page.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(&quot;text=Log out&quot;)
+</td></tr>
+<tr><td>AC08</td><td>Report &#x27;tagged items&#x27; renders</td><td><span class="b fail">FAIL</span></td><td>403</td></tr>
+<tr><td>AC08</td><td>Report &#x27;members&#x27; renders</td><td><span class="b fail">FAIL</span></td><td>403</td></tr>
+<tr><td>AC08</td><td>Report &#x27;circulation&#x27; renders</td><td><span class="b fail">FAIL</span></td><td>403</td></tr>
+<tr><td>AC08</td><td>Report &#x27;operator activity&#x27; renders</td><td><span class="b fail">FAIL</span></td><td>403</td></tr>
+<tr><td>AC08</td><td>Report &#x27;RFID client activity&#x27; renders</td><td><span class="b fail">FAIL</span></td><td>403</td></tr>
+<tr><td>AC08</td><td>Report &#x27;gate events&#x27; renders</td><td><span class="b fail">FAIL</span></td><td>403</td></tr>
+<tr><td>AC08</td><td>Report &#x27;fines&#x27; renders</td><td><span class="b fail">FAIL</span></td><td>403</td></tr>
+<tr><td>FR02</td><td>Virtual bookshelf renders</td><td><span class="b pass">PASS</span></td><td>/catalog/shelves/</td></tr>
+<tr><td>FR01</td><td>Public search (OPAC) renders</td><td><span class="b pass">PASS</span></td><td>/opac/?q=clean</td></tr>
+<tr><td>FR01</td><td>Barcode and spine labels renders</td><td><span class="b pass">PASS</span></td><td>/catalog/label/1/</td></tr>
+<tr><td>FR04</td><td>Members: blocked and fines renders</td><td><span class="b pass">PASS</span></td><td>/members/</td></tr>
+<tr><td>FR11</td><td>System page: health, versions, configuration, audit log renders</td><td><span class="b fail">FAIL</span></td><td>/system/</td></tr>
+<tr><td>FR11</td><td>Administration site renders</td><td><span class="b pass">PASS</span></td><td>/admin/</td></tr>
+</table><h2>Performance (this machine)</h2><table><tr><th>Measurement</th><th>Result</th></tr>
+<tr><td>20,000-row dry run (stage + validate)</td><td>5.3 s</td></tr>
+<tr><td>20,000-row committed import (incl. backup + reconcile)</td><td>8.7 s</td></tr>
+<tr><td>Full-text search latency with 19,000+ titles (ms/query)</td><td>7.4</td></tr>
+</table><h2>Screenshots</h2>
+<p></p>
+<p>Recorded walkthrough: <a href='demo_recording.webm'>demo_recording.webm</a> (open in Chrome/Edge).</p>
+<figure><figcaption>AC07 - Staff login page</figcaption><img src='screenshots/01_AC07_staff_login_page.png' alt='Staff login page'></figure>
+<figure><figcaption>AC08 - Dashboard after login</figcaption><img src='screenshots/02_AC08_dashboard_after_login.png' alt='Dashboard after login'></figure>
+<figure><figcaption>AC02 - Net cataloguing pre-fills title details by ISBN</figcaption><img src='screenshots/03_AC02_net_cataloguing_pre_fills_title_details_by_isbn.png' alt='Net cataloguing pre-fills title details by ISBN'></figure>
+<figure><figcaption>AC02 - New title with copy EVID0001 (not yet tagged)</figcaption><img src='screenshots/04_AC02_new_title_with_copy_evid0001_not_yet_tagged.png' alt='New title with copy EVID0001 (not yet tagged)'></figure>
+<figure><figcaption>AC02 - Tag-to-item relationship displayed</figcaption><img src='screenshots/05_AC02_tag_to_item_relationship_displayed.png' alt='Tag-to-item relationship displayed'></figure>
+<figure><figcaption>AC02 - Tagging refused for unknown record</figcaption><img src='screenshots/06_AC02_tagging_refused_for_unknown_record.png' alt='Tagging refused for unknown record'></figure>
+<figure><figcaption>AC03 - Check-out of BC000001 to M0001</figcaption><img src='screenshots/07_AC03_check_out_of_bc000001_to_m0001.png' alt='Check-out of BC000001 to M0001'></figure>
+<figure><figcaption>AC03 - Renewal extends the due date</figcaption><img src='screenshots/08_AC03_renewal_extends_the_due_date.png' alt='Renewal extends the due date'></figure>
+<figure><figcaption>AC03 - Due-date enquiry</figcaption><img src='screenshots/09_AC03_due_date_enquiry.png' alt='Due-date enquiry'></figure>
+<figure><figcaption>AC03 - Check-in with transaction history</figcaption><img src='screenshots/10_AC03_check_in_with_transaction_history.png' alt='Check-in with transaction history'></figure>
+<figure><figcaption>AC04 - Circulation blocked: reference item</figcaption><img src='screenshots/11_AC04_circulation_blocked_reference_item.png' alt='Circulation blocked: reference item'></figure>
+<figure><figcaption>AC04 - Circulation blocked: blocked member</figcaption><img src='screenshots/12_AC04_circulation_blocked_blocked_member.png' alt='Circulation blocked: blocked member'></figure>
+<figure><figcaption>AC04 - Circulation blocked: fine over limit</figcaption><img src='screenshots/13_AC04_circulation_blocked_fine_over_limit.png' alt='Circulation blocked: fine over limit'></figure>
+<figure><figcaption>AC05 - Handheld inventory: missing, misplaced and GREEN/RED confirmations</figcaption><img src='screenshots/14_AC05_handheld_inventory_missing_misplaced_and_green_red.png' alt='Handheld inventory: missing, misplaced and GREEN/RED confirmations'></figure>
+<figure><figcaption>AC06 - Gate alarm with accession number, CCTV image and queued email</figcaption><img src='screenshots/15_AC06_gate_alarm_with_accession_number_cctv_image_and_qu.png' alt='Gate alarm with accession number, CCTV image and queued email'></figure>
+<figure><figcaption>AC06 - Duplicate gate event ignored</figcaption><img src='screenshots/16_AC06_duplicate_gate_event_ignored.png' alt='Duplicate gate event ignored'></figure>
+<figure><figcaption>AC07 - Smart-card login as viewer1 (read-only role)</figcaption><img src='screenshots/17_AC07_smart_card_login_as_viewer1_read_only_role.png' alt='Smart-card login as viewer1 (read-only role)'></figure>
+<figure><figcaption>AC07 - Role enforcement: viewer denied circulation</figcaption><img src='screenshots/18_AC07_role_enforcement_viewer_denied_circulation.png' alt='Role enforcement: viewer denied circulation'></figure>
+<figure><figcaption>AC07 - Circulation role: reports denied</figcaption><img src='screenshots/19_AC07_circulation_role_reports_denied.png' alt='Circulation role: reports denied'></figure>
+<figure><figcaption>ERR - s_roles failed</figcaption><img src='screenshots/20_ERR_s_roles_failed.png' alt='s_roles failed'></figure>
+<figure><figcaption>AC08 - Dashboard statistics after activity</figcaption><img src='screenshots/21_AC08_dashboard_statistics_after_activity.png' alt='Dashboard statistics after activity'></figure>
+<figure><figcaption>AC08 - Report: tagged items</figcaption><img src='screenshots/22_AC08_report_tagged_items.png' alt='Report: tagged items'></figure>
+<figure><figcaption>AC08 - Report: members</figcaption><img src='screenshots/23_AC08_report_members.png' alt='Report: members'></figure>
+<figure><figcaption>AC08 - Report: circulation</figcaption><img src='screenshots/24_AC08_report_circulation.png' alt='Report: circulation'></figure>
+<figure><figcaption>AC08 - Report: operator activity</figcaption><img src='screenshots/25_AC08_report_operator_activity.png' alt='Report: operator activity'></figure>
+<figure><figcaption>AC08 - Report: RFID client activity</figcaption><img src='screenshots/26_AC08_report_rfid_client_activity.png' alt='Report: RFID client activity'></figure>
+<figure><figcaption>AC08 - Report: gate events</figcaption><img src='screenshots/27_AC08_report_gate_events.png' alt='Report: gate events'></figure>
+<figure><figcaption>AC08 - Report: fines</figcaption><img src='screenshots/28_AC08_report_fines.png' alt='Report: fines'></figure>
+<figure><figcaption>AC08 - Circulation report filtered by operator and date</figcaption><img src='screenshots/29_AC08_circulation_report_filtered_by_operator_and_date.png' alt='Circulation report filtered by operator and date'></figure>
+<figure><figcaption>FR02 - Virtual bookshelf</figcaption><img src='screenshots/30_FR02_virtual_bookshelf.png' alt='Virtual bookshelf'></figure>
+<figure><figcaption>FR01 - Public search (OPAC)</figcaption><img src='screenshots/31_FR01_public_search_opac.png' alt='Public search (OPAC)'></figure>
+<figure><figcaption>FR01 - Barcode and spine labels</figcaption><img src='screenshots/32_FR01_barcode_and_spine_labels.png' alt='Barcode and spine labels'></figure>
+<figure><figcaption>FR04 - Members: blocked and fines</figcaption><img src='screenshots/33_FR04_members_blocked_and_fines.png' alt='Members: blocked and fines'></figure>
+<figure><figcaption>FR11 - System page: health, versions, configuration, audit log</figcaption><img src='screenshots/34_FR11_system_page_health_versions_configuration_audit_lo.png' alt='System page: health, versions, configuration, audit log'></figure>
+<figure><figcaption>FR11 - Administration site</figcaption><img src='screenshots/35_FR11_administration_site.png' alt='Administration site'></figure>
