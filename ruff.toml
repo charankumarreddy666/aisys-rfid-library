@@ -1,0 +1,7 @@
+line-length = 200
+exclude = ["venv", "data", "migrations"]
+[lint]
+select = ["E", "F"]
+ignore = ["E701", "E702"]
+[lint.per-file-ignores]
+"scripts/evidence.py" = ["E501", "E731", "E741"]

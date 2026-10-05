@@ -1,0 +1,16 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+data/*
+!data/.gitkeep
+wheels/
+dist/
+test_evidence/
+*.sqlite3
+.ruff_cache/
+evidence/run_data/
+evidence/test_data/
+evidence/offline_venv/
+evidence_pack.zip
