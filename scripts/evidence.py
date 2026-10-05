@@ -296,6 +296,20 @@ try:
         code, csv_text = sa.get("/reports/?type=circulation&operator=ncip-client&format=csv")
         check("AC08", "Filtered report exports to CSV", code == 200 and "CHECKOUT" in csv_text)
         check("FR11", "System page (health, versions, audit) available to admin", sa.get("/system/")[0] == 200)
+        # Credential check: every seeded username/password/role combination
+        for user, circ, rep, system in (("admin", 200, 200, 200), ("librarian1", 200, 200, 403),
+                                        ("circdesk1", 200, 403, 403), ("viewer1", 403, 200, 403)):
+            sx = Session()
+            sx.post("/login/", {"username": user, "password": "Demo#12345"})
+            check("AC07", f"Password login works for {user}", user in sx.get("/")[1] and "Log out" in sx.get("/")[1])
+            got = (sx.get("/circulation/")[0], sx.get("/reports/")[0], sx.get("/system/")[0])
+            check("AC07", f"Role permissions correct for {user} (circulation/reports/system)", got == (circ, rep, system), str(got))
+        sbad = Session()
+        sbad.post("/login/", {"username": "admin", "password": "wrong-password"})
+        check("AC07", "Wrong password is refused", "Log out" not in sbad.get("/")[1])
+        sl = Session()
+        sl.post("/login/smartcard/", {"card_uid": "04AA000002"})
+        check("AC07", "Smart-card login works (librarian1)", "librarian1" in sl.get("/")[1])
     (LOGS / "api_exchanges.txt").write_text("\n".join(api_log), encoding="utf-8")
     STEPS.append({"title": "Live API exchanges (NCIP, SIP2, gate, inventory, tag)", "req": "FR03/FR05-07", "status": "PASS" if all(c["ok"] for c in CHECKS if c["ac"] in ("AC02", "AC03", "AC05", "AC06")) else "FAIL", "secs": 0, "log": "logs/api_exchanges.txt"})
 
@@ -344,7 +358,9 @@ try:
                 page.click("button[type=submit]")
 
             def logout():
-                page.click("text=Log out")
+                go("/")  # a 403/404 page has no nav, so return to a normal page first
+                page.click("button:has-text('Log out')")
+                page.wait_for_load_state()
 
             def step(fn):
                 try:
@@ -366,7 +382,8 @@ try:
             def s_catalog_tag():  # AC02
                 go("/catalog/")
                 page.fill("#isbn0", "9780132350884")
-                page.click("text=Fetch details")
+                with page.expect_navigation():
+                    page.click("button:has-text('Fetch details')")  # not the label that also contains this text
                 check("AC02", "Net cataloguing pre-fills the title form", page.input_value("#t") == "Clean Code", page.input_value("#t"))
                 shot("AC02", "Net cataloguing pre-fills title details by ISBN")
                 page.fill("#t", "Evidence Run Title")

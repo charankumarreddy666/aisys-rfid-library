@@ -1,12 +1,12 @@
 ﻿Acceptance scenario,Description,Result,Checks passed,Checks total
 AC01,"Spreadsheet import, validation, duplicates, reconciliation",PASS,6,6
-AC02,Item + mock tag relationship,FAIL,4,5
+AC02,Item + mock tag relationship,PASS,5,5
 AC03,Check-out/renew/check-in via NCIP/SIP2 with history,PASS,8,8
 AC04,"Blocks: reference item, blocked member, fine limit",PASS,6,6
 AC05,Handheld inventory: missing/misplaced + confirmations,PASS,4,4
 AC06,"Gate event, accession, CCTV, email",PASS,7,7
-AC07,Smart-card login and role permissions,PASS,12,12
-AC08,Dashboard and filterable reports,FAIL,9,16
+AC07,Smart-card login and role permissions,PASS,22,22
+AC08,Dashboard and filterable reports,PASS,16,16
 AC09,"Offline install, update and rollback",PASS,3,3
 AC10,Restore after failed migration,PASS,2,2
 
@@ -59,8 +59,18 @@ AC08,Report 'gate_events' renders,PASS,
 AC08,Report 'fines' renders,PASS,
 AC08,Filtered report exports to CSV,PASS,
 FR11,"System page (health, versions, audit) available to admin",PASS,
+AC07,Password login works for admin,PASS,
+AC07,Role permissions correct for admin (circulation/reports/system),PASS,"(200, 200, 200)"
+AC07,Password login works for librarian1,PASS,
+AC07,Role permissions correct for librarian1 (circulation/reports/system),PASS,"(200, 200, 403)"
+AC07,Password login works for circdesk1,PASS,
+AC07,Role permissions correct for circdesk1 (circulation/reports/system),PASS,"(200, 403, 403)"
+AC07,Password login works for viewer1,PASS,
+AC07,Role permissions correct for viewer1 (circulation/reports/system),PASS,"(403, 200, 403)"
+AC07,Wrong password is refused,PASS,
+AC07,Smart-card login works (librarian1),PASS,
 AC07,Password login works,PASS,http://127.0.0.1:8765/
-AC02,Net cataloguing pre-fills the title form,FAIL,
+AC02,Net cataloguing pre-fills the title form,PASS,Clean Code
 AC02,UI links tag to the validated item,PASS,Tag E200AAAA00000001 is linked to EVID0001 - Evidence Run Title.
 AC02,UI refuses tagging an unknown record,PASS,No catalogue record with that accession number - catalogue the item first. [ITEM_NOT_FOUND]
 AC03,UI check-out succeeds,PASS,Checked out Clean Code to Demo Member 1. Due 19 Oct 2026.
@@ -77,20 +87,16 @@ AC07,Viewer cannot open Circulation (403),PASS,
 AC07,Viewer cannot open System (403),PASS,
 AC07,Viewer can open Reports,PASS,
 AC07,Circulation role can open desk but not reports,PASS,
-UI,Browser step 's_roles' completed,FAIL,"Page.click: Timeout 15000ms exceeded.
-Call log:
-  - waiting for locator(""text=Log out"")
-"
-AC08,Report 'tagged items' renders,FAIL,403
-AC08,Report 'members' renders,FAIL,403
-AC08,Report 'circulation' renders,FAIL,403
-AC08,Report 'operator activity' renders,FAIL,403
-AC08,Report 'RFID client activity' renders,FAIL,403
-AC08,Report 'gate events' renders,FAIL,403
-AC08,Report 'fines' renders,FAIL,403
+AC08,Report 'tagged items' renders,PASS,200
+AC08,Report 'members' renders,PASS,200
+AC08,Report 'circulation' renders,PASS,200
+AC08,Report 'operator activity' renders,PASS,200
+AC08,Report 'RFID client activity' renders,PASS,200
+AC08,Report 'gate events' renders,PASS,200
+AC08,Report 'fines' renders,PASS,200
 FR02,Virtual bookshelf renders,PASS,/catalog/shelves/
 FR01,Public search (OPAC) renders,PASS,/opac/?q=clean
 FR01,Barcode and spine labels renders,PASS,/catalog/label/1/
 FR04,Members: blocked and fines renders,PASS,/members/
-FR11,"System page: health, versions, configuration, audit log renders",FAIL,/system/
+FR11,"System page: health, versions, configuration, audit log renders",PASS,/system/
 FR11,Administration site renders,PASS,/admin/
