@@ -1,0 +1,7 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe manage.py demo_failed_migration C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\run_data\sample_20000.xlsx
+
+1. Fingerprint of original data captured.
+2. Migration crashed as planned: simulated crash after partial load
+3. Items now in DB: 4008 (was 8) - data is partially changed.
+4. Restored from 20261005-101705-109446_pre-import-3.sqlite3.
+5. RESULT: original data intact - fingerprints match.

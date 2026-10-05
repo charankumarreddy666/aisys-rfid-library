@@ -1,0 +1,2 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe -m venv C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\offline_venv
+

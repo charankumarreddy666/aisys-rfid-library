@@ -1,0 +1,2 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe -m pip download -r requirements.txt -d C:\Users\chara\Desktop\AISYS\aisys-rfid-library\wheels -q
+

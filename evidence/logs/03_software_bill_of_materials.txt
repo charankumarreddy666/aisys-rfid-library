@@ -1,0 +1,3 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe scripts/gen_sbom.py
+
+SBOM written with 6 components
