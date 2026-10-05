@@ -1,0 +1,96 @@
+﻿Acceptance scenario,Description,Result,Checks passed,Checks total
+AC01,"Spreadsheet import, validation, duplicates, reconciliation",PASS,6,6
+AC02,Item + mock tag relationship,FAIL,4,5
+AC03,Check-out/renew/check-in via NCIP/SIP2 with history,PASS,8,8
+AC04,"Blocks: reference item, blocked member, fine limit",PASS,6,6
+AC05,Handheld inventory: missing/misplaced + confirmations,PASS,4,4
+AC06,"Gate event, accession, CCTV, email",PASS,7,7
+AC07,Smart-card login and role permissions,PASS,12,12
+AC08,Dashboard and filterable reports,FAIL,9,16
+AC09,"Offline install, update and rollback",PASS,3,3
+AC10,Restore after failed migration,PASS,2,2
+
+Check group,Check,Result,Detail
+TESTS,Automated tests passed (29 tests),PASS,
+AC01,Dry run wrote nothing,PASS,
+AC01,Invalid rows rejected,PASS,rejected=800
+AC01,Duplicates identified,PASS,duplicates=199
+AC01,Source = migrated + rejected + duplicates,PASS,20000 = 19001 + 800 + 199
+AC01,Target count matches migrated count,PASS,19001
+AC01,Rollback restores original item count,PASS,['8'] -> ['8']
+AC10,Partial data appeared after the crash,PASS,
+AC10,Restore proves original data intact,PASS,
+AC09,Update applied (version changed),PASS,1.0.1
+AC09,Rollback restored previous version,PASS,1.0.0
+AC09,Installs from local wheels without internet,PASS,
+NFR07,Health endpoint reports ok,PASS,"{""status"": ""ok"", ""version"": ""1.0.0"", ""database"": ""ok"", ""items"": 8, ""rfid_mode"": ""mock"", ""lms_online"": true, ""time"": ""202"
+NFR02,API without key is refused (401),PASS,
+AC03,NCIP CheckOutItem returns due date,PASS,
+AC03,NCIP RenewItem returns new date,PASS,
+AC03,NCIP CheckInItem succeeds,PASS,
+AC04,NCIP denies blocked member,PASS,
+AC04,NCIP denies reference item,PASS,
+AC04,NCIP denies member over fine limit,PASS,
+AC03,SIP2 checkout / renew / checkin flow,PASS,121NNY 300NNY 101YNN
+AC03,Auditable history recorded for NCIP/SIP2 (incl. denials),PASS,['9 3']
+AC06,Unauthorised removal raises alarm with accession number,PASS,"{'duplicate': False, 'kind': 'UNAUTHORISED_REMOVAL', 'alarm': True, 'accession_no': 'ACC000002', 'cctv_image': 'EVID-G1.png'}"
+AC06,Mock CCTV image attached,PASS,
+AC06,Email notification queued,PASS,['1']
+AC06,Duplicate gate event ignored,PASS,
+AC06,Gate decides from cache while LMS offline,PASS,"{'duplicate': False, 'kind': 'UNAUTHORISED_REMOVAL', 'alarm': True, 'accession_no': 'ACC000003', 'cctv_image': 'EVID-G2.png'}"
+AC05,Inventory reports missing items,PASS,"[{'tag_uid': 'E200000000000003', 'accession_no': 'ACC000003', 'title': 'Head First Design Patterns'}, {'tag_uid': 'E200000000000004', 'accession_no': 'ACC000004', 'title': 'The Pragmatic Programmer'}]"
+AC05,Inventory reports misplaced items,PASS,"[{'tag_uid': 'E200000000000005', 'accession_no': 'ACC000005', 'title': 'Database System Concepts', 'belongs_on': 'B-02'}]"
+AC05,Visible + audible confirmation events recorded,PASS,['2 1']
+AC02,API validates record and links tag,PASS,"{""tag_uid"": ""E2009999999999AA"", ""accession_no"": ""ACC000008"", ""title"": ""Encyclopaedia of Library Science""}"
+AC02,API refuses unknown accession number,PASS,
+AC07,Smart-card login works (viewer1),PASS,
+AC07,Viewer role: circulation denied (403),PASS,
+AC07,Viewer role: system page denied (403),PASS,
+AC07,Viewer role: reports allowed,PASS,
+AC07,"Circulation role: desk allowed, reports denied",PASS,
+AC07,Unknown smart card is refused,PASS,
+AC08,Dashboard shows statistics,PASS,
+AC08,Report 'tagged_items' renders,PASS,
+AC08,Report 'members' renders,PASS,
+AC08,Report 'circulation' renders,PASS,
+AC08,Report 'operators' renders,PASS,
+AC08,Report 'rfid_clients' renders,PASS,
+AC08,Report 'gate_events' renders,PASS,
+AC08,Report 'fines' renders,PASS,
+AC08,Filtered report exports to CSV,PASS,
+FR11,"System page (health, versions, audit) available to admin",PASS,
+AC07,Password login works,PASS,http://127.0.0.1:8765/
+AC02,Net cataloguing pre-fills the title form,FAIL,
+AC02,UI links tag to the validated item,PASS,Tag E200AAAA00000001 is linked to EVID0001 - Evidence Run Title.
+AC02,UI refuses tagging an unknown record,PASS,No catalogue record with that accession number - catalogue the item first. [ITEM_NOT_FOUND]
+AC03,UI check-out succeeds,PASS,Checked out Clean Code to Demo Member 1. Due 19 Oct 2026.
+AC03,UI renewal succeeds,PASS,Renewed. New due date 02 Nov 2026.
+AC03,UI check-in succeeds,PASS,Checked in Clean Code.
+AC04,UI blocks reference item,PASS,Not allowed: Reference items cannot be borrowed. [REFERENCE_ITEM]
+AC04,UI blocks blocked member,PASS,Not allowed: Library card suspended (demo) [MEMBER_BLOCKED]
+AC04,UI blocks fine over limit,PASS,Not allowed: Outstanding fines 75 exceed the limit 50.00. [FINE_LIMIT_EXCEEDED]
+AC05,UI inventory lists missing and misplaced,PASS,"Shelf A-01: expected 5, scanned 3, missing 3, misplaced 1, unknown 0."
+AC06,UI gate event raises alarm,PASS,ALARM: UNAUTHORISED_REMOVAL - accession ACC000004. CCTV image saved and e-mail queued.
+AC06,UI ignores duplicate gate event,PASS,Duplicate event ignored (already processed).
+AC07,Smart-card login works (viewer),PASS,http://127.0.0.1:8765/
+AC07,Viewer cannot open Circulation (403),PASS,
+AC07,Viewer cannot open System (403),PASS,
+AC07,Viewer can open Reports,PASS,
+AC07,Circulation role can open desk but not reports,PASS,
+UI,Browser step 's_roles' completed,FAIL,"Page.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""text=Log out"")
+"
+AC08,Report 'tagged items' renders,FAIL,403
+AC08,Report 'members' renders,FAIL,403
+AC08,Report 'circulation' renders,FAIL,403
+AC08,Report 'operator activity' renders,FAIL,403
+AC08,Report 'RFID client activity' renders,FAIL,403
+AC08,Report 'gate events' renders,FAIL,403
+AC08,Report 'fines' renders,FAIL,403
+FR02,Virtual bookshelf renders,PASS,/catalog/shelves/
+FR01,Public search (OPAC) renders,PASS,/opac/?q=clean
+FR01,Barcode and spine labels renders,PASS,/catalog/label/1/
+FR04,Members: blocked and fines renders,PASS,/members/
+FR11,"System page: health, versions, configuration, audit log renders",FAIL,/system/
+FR11,Administration site renders,PASS,/admin/
