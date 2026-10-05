@@ -1,0 +1,25 @@
+{% load static %}<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Library{% endblock %} - RFID Library System</title>
+<link rel="stylesheet" href="{% static 'style.css' %}"></head><body>
+<nav class="top" aria-label="Main">
+  <span class="brand">RFID Library</span>
+  {% if user.is_authenticated %}
+  <a href="{% url 'dashboard' %}">Dashboard</a>
+  {% if can.catalog_view %}<a href="{% url 'catalog' %}">Catalogue</a><a href="{% url 'bookshelf' %}">Bookshelf</a>{% endif %}
+  {% if can.circ_process %}<a href="{% url 'desk' %}">Circulation</a>{% endif %}
+  {% if can.members_view %}<a href="{% url 'members' %}">Members</a>{% endif %}
+  {% if can.gate_view %}<a href="{% url 'rfid_console' %}">RFID console</a>{% endif %}
+  {% if can.reports_view %}<a href="{% url 'reports' %}">Reports</a>{% endif %}
+  {% if can.admin_system %}<a href="{% url 'system' %}">System</a><a href="/admin/">Admin</a>{% endif %}
+  {% endif %}
+  <a href="{% url 'opac' %}">Public search</a>
+  <span class="right">{% if user.is_authenticated %}{{ user.username }}
+    <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button type="submit">Log out</button></form>{% endif %}
+    <span>v{{ app_version }}</span></span>
+</nav>
+{% include "_banner.html" %}
+<main>
+{% for m in messages %}<div class="msg {{ m.tags }}" role="status">{{ m }}</div>{% endfor %}
+{% block content %}{% endblock %}
+</main></body></html>

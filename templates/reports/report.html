@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block title %}Reports{% endblock %}
+{% block content %}<h1>Reports</h1>
+<form class="panel row" method="get" style="align-items:end">
+<div><label for="type">Report</label><select id="type" name="type">{% for k, v in types.items %}<option value="{{ k }}" {% if k == rtype %}selected{% endif %}>{{ v }}</option>{% endfor %}</select></div>
+<div><label for="from">From</label><input id="from" type="date" name="from" value="{{ p.from }}"></div>
+<div><label for="to">To</label><input id="to" type="date" name="to" value="{{ p.to }}"></div>
+<div><label for="q">Contains</label><input id="q" name="q" value="{{ p.q }}"></div>
+<div><label for="op">Operator</label><input id="op" name="operator" value="{{ p.operator }}"></div>
+<div style="flex:0"><button class="btn" style="margin:0">Apply filters</button></div></form>
+<div class="panel scroll"><h2>{{ title }} ({{ rows|length }} rows)</h2>
+<a class="btn ghost noprint" href="?{{ request.GET.urlencode }}&format=csv">Download CSV</a>
+<table><tr>{% for h in headers %}<th>{{ h }}</th>{% endfor %}</tr>{% for r in rows %}<tr>{% for c in r %}<td>{{ c }}</td>{% endfor %}</tr>
+{% empty %}<tr><td colspan="{{ headers|length }}">No rows match these filters.</td></tr>{% endfor %}</table></div>{% endblock %}

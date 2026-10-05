@@ -1,0 +1,16 @@
+{% extends "base.html" %}{% block title %}Circulation{% endblock %}
+{% block content %}<h1>Circulation desk</h1>
+<p class="muted">Item can be a barcode, accession number or RFID tag UID (for example BC000001, ACC000001, E20000000000000001). Demo members: M0001, M0002 (normal), M0003 (blocked), M0004 (fines over limit).</p>
+<div class="grid">
+<div class="panel"><h2>Check out</h2><form method="post">{% csrf_token %}<input type="hidden" name="action" value="checkout">
+<label for="co_m">Member number</label><input id="co_m" name="member_no" required><label for="co_i">Item</label><input id="co_i" name="item" required><button class="btn">Check out</button></form></div>
+<div class="panel"><h2>Check in</h2><form method="post">{% csrf_token %}<input type="hidden" name="action" value="checkin">
+<label for="ci_i">Item</label><input id="ci_i" name="item" required><button class="btn">Check in</button></form></div>
+<div class="panel"><h2>Renew</h2><form method="post">{% csrf_token %}<input type="hidden" name="action" value="renew">
+<label for="rn_i">Item</label><input id="rn_i" name="item" required><button class="btn">Renew</button></form></div>
+<div class="panel"><h2>Due date enquiry</h2><form method="post">{% csrf_token %}<input type="hidden" name="action" value="due">
+<label for="du_i">Item</label><input id="du_i" name="item" required><button class="btn ghost">Find due date</button></form></div></div>
+<div class="panel scroll"><h2>Recent transactions</h2><table><tr><th>Time</th><th>Type</th><th>Channel</th><th>Item</th><th>Member</th><th>Operator</th><th>Result</th></tr>
+{% for t in recent %}<tr><td>{{ t.ts|date:"d M H:i:s" }}</td><td>{{ t.tx_type }}</td><td>{{ t.channel }}</td><td>{{ t.item_ref }}</td><td>{{ t.member_no }}</td><td>{{ t.operator }}</td>
+<td>{% if t.success %}<span class="tag good">ok</span>{% else %}<span class="tag bad">{{ t.reason }}</span>{% endif %}</td></tr>
+{% empty %}<tr><td colspan="7">No transactions yet.</td></tr>{% endfor %}</table></div>{% endblock %}

@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block title %}Public search{% endblock %}
+{% block content %}<h1>Search the library</h1>
+<form class="panel row" method="get"><div style="flex:4"><label for="q">Title, author, ISBN or call number</label><input id="q" name="q" value="{{ q }}" autofocus></div>
+<div><button class="btn" style="margin-top:1.5rem">Search</button></div></form>
+{% if q %}<div class="panel scroll">{% if rows %}<table><tr><th>Title</th><th>Author</th><th>Call number</th><th>Available copies</th></tr>
+{% for r in rows %}<tr><td>{{ r.biblio.title }}</td><td>{{ r.biblio.author }}</td><td>{{ r.biblio.call_number }}</td>
+<td>{{ r.available }} of {{ r.copies }}</td></tr>{% endfor %}</table>{% else %}<p>No titles match "{{ q }}". Try fewer words or a different spelling.</p>{% endif %}</div>{% endif %}{% endblock %}

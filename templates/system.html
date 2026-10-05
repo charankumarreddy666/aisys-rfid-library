@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block title %}System{% endblock %}
+{% block content %}<h1>System</h1><div class="grid">
+<div class="panel"><h2>Health and versions</h2><table>
+<tr><th>Status</th><td><span class="tag {% if health.status == 'ok' %}good{% else %}bad{% endif %}">{{ health.status }}</span></td></tr>
+<tr><th>Application version</th><td>{{ health.version }}</td></tr><tr><th>Database</th><td>{{ health.database }}</td></tr>
+<tr><th>Items</th><td>{{ health.items }}</td></tr><tr><th>RFID mode</th><td>{{ health.rfid_mode }}</td></tr>
+<tr><th>LMS online</th><td>{{ health.lms_online }}</td></tr><tr><th>Python</th><td>{{ python }}</td></tr><tr><th>Platform</th><td>{{ platform }}</td></tr></table></div>
+<div class="panel"><h2>Configuration</h2><table>{% for k, v in settings_view.items %}<tr><th>{{ k }}</th><td>
+<form method="post" class="row">{% csrf_token %}<input type="hidden" name="key" value="{{ k }}"><input name="value" value="{{ v }}" aria-label="{{ k }}"><button class="btn" style="margin:0;flex:0">Save changes</button></form></td></tr>{% endfor %}</table></div></div>
+<div class="panel scroll"><h2>Audit log (latest 50)</h2><table><tr><th>Time</th><th>Actor</th><th>Action</th><th>Target</th><th>Detail</th></tr>
+{% for a in audit %}<tr><td>{{ a.ts|date:"Y-m-d H:i:s" }}</td><td>{{ a.actor }}</td><td>{{ a.action }}</td><td>{{ a.target }}</td><td>{{ a.detail }}</td></tr>{% endfor %}</table></div>{% endblock %}

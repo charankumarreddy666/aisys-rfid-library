@@ -1,0 +1,29 @@
+{% extends "base.html" %}{% block title %}RFID console{% endblock %}
+{% block content %}<h1>RFID console (mock devices)</h1>
+<p class="muted">These forms stand in for the staff reader, handheld reader and security gate. Real devices call the JSON API instead (see docs/api.md).</p>
+<div class="grid">
+{% if can.tag_manage %}<div class="panel"><h2>Tag an item (staff station)</h2><form method="post" action="{% url 'rfid_ui_tag' %}">{% csrf_token %}
+<label for="ta">Accession number (must exist in the catalogue)</label><input id="ta" name="accession_no" placeholder="ACC000001" required>
+<label for="tu">Tag UID (hex, 8-32 characters)</label><input id="tu" name="tag_uid" placeholder="E20000000000000099" required>
+<label><input type="checkbox" name="retag" style="width:auto"> Replace existing tag (re-tag)</label><button class="btn">Link tag to item</button></form></div>{% endif %}
+{% if can.gate_simulate %}<div class="panel"><h2>Security gate</h2><form method="post" action="{% url 'rfid_ui_gate' %}">{% csrf_token %}
+<label for="gu">Tag UID passing through the gate</label><input id="gu" name="tag_uid" placeholder="E200000000000001" required>
+<label for="ge">Event id (leave empty for a new one; reuse to test duplicates)</label><input id="ge" name="event_id">
+<label><input type="checkbox" name="offline" style="width:auto"> Simulate LMS offline (use gate cache)</label><button class="btn">Send gate event</button></form></div>{% endif %}
+{% if can.inventory_run %}<div class="panel"><h2>Handheld shelf inventory</h2><form method="post" action="{% url 'rfid_ui_inventory' %}">{% csrf_token %}
+<label for="sh">Shelf</label><input id="sh" name="shelf" value="A-01" required><label for="tg">Tags scanned (separate by space, comma or new line)</label>
+<textarea id="tg" name="tags" required>E200000000000001
+E200000000000002
+E200000000000005</textarea><button class="btn">Run inventory</button></form></div>{% endif %}</div>
+<div class="panel scroll"><h2>Latest inventory sessions</h2>{% for s in sessions %}<p><b>{{ s.shelf }}</b> {{ s.ts|date:"d M H:i" }} - expected {{ s.expected }}, scanned {{ s.scanned }}</p>
+{% if s.missing %}<p>Missing: {% for m in s.missing %}<span class="tag bad">{{ m.accession_no }} {{ m.title }}</span> {% endfor %}</p>{% endif %}
+{% if s.misplaced %}<p>Misplaced: {% for m in s.misplaced %}<span class="tag warn">{{ m.accession_no }} belongs on {{ m.belongs_on }}</span> {% endfor %}</p>{% endif %}
+{% if s.unknown %}<p>Unknown tags: {{ s.unknown|join:", " }}</p>{% endif %}{% empty %}<p class="muted">No inventory run yet.</p>{% endfor %}</div>
+<div class="panel scroll"><h2>Gate events</h2><table><tr><th>Time</th><th>Kind</th><th>Tag</th><th>Accession</th><th>CCTV</th><th>Offline mode</th></tr>
+{% for g in gates %}<tr><td>{{ g.ts|date:"d M H:i:s" }}</td><td><span class="tag {% if g.alarm %}bad{% else %}good{% endif %}">{{ g.get_kind_display }}</span></td><td>{{ g.tag_uid }}</td><td>{{ g.accession_no }}</td>
+<td>{% if g.cctv_image %}<a href="{% url 'rfid_cctv' g.cctv_image %}"><img src="{% url 'rfid_cctv' g.cctv_image %}" width="80" alt="CCTV frame for {{ g.accession_no }}"></a>{% endif %}</td><td>{{ g.offline_mode|yesno:"yes,no" }}</td></tr>
+{% empty %}<tr><td colspan="6">No gate events yet.</td></tr>{% endfor %}</table></div>
+<div class="grid"><div class="panel scroll"><h2>Tag to item links</h2><table><tr><th>Tag</th><th>Item</th><th>Title</th><th>Secured</th></tr>
+{% for t in tags %}<tr><td>{{ t.tag_uid }}</td><td>{{ t.item.accession_no }}</td><td>{{ t.item.biblio.title }}</td><td>{{ t.security_bit|yesno:"yes,no" }}</td></tr>{% endfor %}</table></div>
+<div class="panel scroll"><h2>Device events</h2><table><tr><th>Time</th><th>Device</th><th>Kind</th></tr>
+{% for e in events %}<tr><td>{{ e.ts|date:"H:i:s" }}</td><td>{{ e.device_type }}</td><td>{{ e.kind }} {% if e.payload.visible %}<span class="tag {% if e.payload.visible == 'GREEN' %}good{% else %}bad{% endif %}">{{ e.payload.visible }} / {{ e.payload.audible }}</span>{% endif %}</td></tr>{% endfor %}</table></div></div>{% endblock %}

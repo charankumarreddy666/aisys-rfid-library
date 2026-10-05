@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block title %}{{ biblio.title }}{% endblock %}
+{% block content %}<h1>{{ biblio.title }}</h1><p class="muted">{{ biblio.author }} - ISBN {{ biblio.isbn|default:"n/a" }} - {{ biblio.call_number }}</p>
+<div class="panel scroll"><h2>Copies</h2>{% if items %}<table><tr><th>Accession</th><th>Barcode</th><th>Shelf</th><th>Status</th><th>RFID tag</th><th></th></tr>
+{% for it in items %}<tr><td>{{ it.accession_no }}</td><td>{{ it.barcode }}</td><td>{{ it.shelf_location }}</td>
+<td><span class="tag {% if it.status == 'AVAILABLE' %}good{% else %}warn{% endif %}">{{ it.get_status_display }}</span>{% if it.is_reference %} <span class="tag">Reference</span>{% endif %}</td>
+<td>{% if it.tag %}{{ it.tag.tag_uid }} <span class="tag {% if it.tag.security_bit %}good{% else %}warn{% endif %}">{% if it.tag.security_bit %}secured{% else %}unsecured{% endif %}</span>{% else %}<span class="muted">not tagged</span>{% endif %}</td>
+<td><a href="{% url 'item_label' it.pk %}">Print label</a></td></tr>{% endfor %}</table>{% else %}<p>No copies yet. Add one below.</p>{% endif %}</div>
+{% if can.catalog_edit %}<div class="panel"><h2>Add a copy</h2><form method="post">{% csrf_token %}<div class="row">
+<div><label for="acc">Accession number</label><input id="acc" name="accession_no" required></div>
+<div><label for="bc">Barcode (defaults to accession)</label><input id="bc" name="barcode"></div>
+<div><label for="sh">Shelf</label><input id="sh" name="shelf_location"></div></div>
+<label><input type="checkbox" name="is_reference" style="width:auto"> Reference item (cannot be borrowed)</label>
+<button class="btn" type="submit">Add copy</button></form></div>{% endif %}{% endblock %}

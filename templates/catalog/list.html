@@ -1,0 +1,20 @@
+{% extends "base.html" %}{% block title %}Catalogue{% endblock %}
+{% block content %}<h1>Catalogue</h1>
+<form class="panel row" method="get"><div style="flex:4"><label for="q">Search ({% if fts %}full-text index, updated instantly{% else %}basic search{% endif %})</label><input id="q" name="q" value="{{ q }}"></div>
+<div><button class="btn" style="margin-top:1.5rem">Search</button></div></form>
+<div class="panel scroll"><h2>{% if q %}Results for "{{ q }}"{% else %}Newest titles{% endif %}</h2>
+{% if results %}<table><tr><th>Title</th><th>Author</th><th>ISBN</th><th>Call number</th></tr>
+{% for b in results %}<tr><td><a href="{% url 'biblio_detail' b.pk %}">{{ b.title }}</a></td><td>{{ b.author }}</td><td>{{ b.isbn }}</td><td>{{ b.call_number }}</td></tr>{% endfor %}</table>
+{% else %}<p>No titles found.</p>{% endif %}</div>
+{% if can.catalog_edit %}<div class="panel"><h2>Add a title</h2>
+<form method="post" class="row" style="align-items:end">{% csrf_token %}<input type="hidden" name="action" value="lookup">
+<div><label for="isbn0">Fetch details by ISBN (net cataloguing, mock provider)</label><input id="isbn0" name="isbn" value="{{ prefill.isbn }}" placeholder="9780132350884"></div>
+<div><button class="btn ghost" style="margin:0">Fetch details</button></div></form>
+<form method="post">{% csrf_token %}<input type="hidden" name="action" value="add"><div class="row">
+<div><label for="t">Title</label><input id="t" name="title" value="{{ prefill.title }}" required></div>
+<div><label for="a">Author</label><input id="a" name="author" value="{{ prefill.author }}"></div>
+<div><label for="i">ISBN</label><input id="i" name="isbn" value="{{ prefill.isbn }}"></div></div><div class="row">
+<div><label for="c">Call number</label><input id="c" name="call_number" value="{{ prefill.call_number }}"></div>
+<div><label for="p">Publisher</label><input id="p" name="publisher" value="{{ prefill.publisher }}"></div>
+<div><label for="y">Year</label><input id="y" name="year" value="{{ prefill.year }}"></div></div>
+<button class="btn" type="submit">Create title</button></form></div>{% endif %}{% endblock %}

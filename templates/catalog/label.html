@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block title %}Label {{ item.accession_no }}{% endblock %}
+{% block content %}<h1>Labels for {{ item.accession_no }}</h1>
+<div class="panel"><h2>Barcode label</h2><div class="label">{{ barcode_svg|safe }}<br>{{ item.barcode }}<br><small>{{ item.biblio.title|truncatechars:34 }}</small></div>
+<h2>Spine label</h2><div class="label" style="width:90px;text-align:center">{{ item.biblio.call_number|linebreaksbr }}<br>{{ item.shelf_location }}</div>
+<button class="btn noprint" onclick="window.print()">Print</button></div>{% endblock %}

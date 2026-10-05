@@ -1,0 +1,18 @@
+{% extends "base.html" %}{% block title %}Dashboard{% endblock %}
+{% block content %}<h1>Library activity</h1>
+<div class="stats">
+<div class="stat"><b>{{ stats.titles }}</b><span>titles</span></div>
+<div class="stat"><b>{{ stats.items }}</b><span>copies</span></div>
+<div class="stat"><b>{{ stats.tagged }}</b><span>RFID-tagged copies</span></div>
+<div class="stat"><b>{{ stats.members }}</b><span>members</span></div>
+<div class="stat"><b>{{ stats.active_loans }}</b><span>items on loan</span></div>
+<div class="stat {% if stats.overdue %}alert{% endif %}"><b>{{ stats.overdue }}</b><span>overdue</span></div>
+<div class="stat"><b>{{ stats.fines }}</b><span>unpaid fines</span></div>
+<div class="stat {% if stats.gate_alerts %}alert{% endif %}"><b>{{ stats.gate_alerts }}</b><span>gate alarms (7 days)</span></div>
+<div class="stat"><b>{{ stats.denied_today }}</b><span>denied transactions today</span></div>
+<div class="stat"><b>{{ stats.queued }}</b><span>notifications queued</span></div></div>
+<div class="grid"><div class="panel"><h2>Successful transactions, last 7 days</h2>
+<div class="bars">{% for d in days %}<div><i style="height:{{ d.pct }}%" title="{{ d.count }}"></i>{{ d.count }}<br>{{ d.label }}</div>{% endfor %}</div></div>
+<div class="panel"><h2>Most active operators</h2>{% if top_ops %}<table><tr><th>Operator</th><th>Transactions</th></tr>
+{% for o in top_ops %}<tr><td>{{ o.operator }}</td><td>{{ o.n }}</td></tr>{% endfor %}</table>
+{% else %}<p class="muted">No circulation yet. Check out an item from the Circulation page.</p>{% endif %}</div></div>{% endblock %}

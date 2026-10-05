@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block title %}Virtual bookshelf{% endblock %}
+{% block content %}<h1>Virtual bookshelf</h1><p class="muted">Each spine is a copy. Green = available, amber = on loan, red = missing, grey = reference.</p>
+{% for shelf, items in shelves.items %}<div class="panel"><h2>Shelf {{ shelf }}</h2><div class="shelf">
+{% for it in items %}<a class="spine" href="{% url 'biblio_detail' it.biblio_id %}" style="background:{% if it.is_reference %}#666{% elif it.status == 'AVAILABLE' %}#1b6e3f{% elif it.status == 'ON_LOAN' %}#a86b00{% else %}#a8261d{% endif %}" title="{{ it.biblio.title }}">{{ it.biblio.title|truncatechars:26 }}</a>{% endfor %}</div></div>
+{% empty %}<p>No shelved items yet.</p>{% endfor %}{% endblock %}

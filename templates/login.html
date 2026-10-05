@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block title %}Log in{% endblock %}
+{% block content %}<div class="login panel"><h1>Staff log in</h1>
+{% if form.errors %}<div class="msg error">Username or password is incorrect.</div>{% endif %}
+<form method="post">{% csrf_token %}
+<label for="id_username">Username</label><input id="id_username" name="username" autofocus required autocomplete="username">
+<label for="id_password">Password</label><input id="id_password" name="password" type="password" required autocomplete="current-password">
+<input type="hidden" name="next" value="{{ next }}">
+<button class="btn" type="submit">Log in</button> <a class="btn ghost" href="{% url 'smartcard_login' %}">Use smart card</a></form></div>{% endblock %}

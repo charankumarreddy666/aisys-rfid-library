@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block title %}Smart-card login{% endblock %}
+{% block content %}<div class="login panel"><h1>Tap your staff card</h1>
+<p class="muted">Mock credential provider. Demo cards: 04AA000001 (admin), 04AA000002 (librarian), 04AA000003 (circulation), 04AA000004 (viewer).</p>
+<form method="post">{% csrf_token %}<label for="uid">Card UID</label><input id="uid" name="card_uid" autofocus required>
+<button class="btn" type="submit">Log in with card</button> <a class="btn ghost" href="{% url 'login' %}">Use password</a></form></div>{% endblock %}
