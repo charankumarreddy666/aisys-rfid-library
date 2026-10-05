@@ -1,0 +1,6 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe manage.py rollback_update
+
+{
+  "rolled_back_from": "1.0.1",
+  "restored": "1.0.0"
+}

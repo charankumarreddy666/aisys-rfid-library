@@ -1,0 +1,2 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe manage.py migrate -v 0
+

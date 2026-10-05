@@ -1,0 +1,12 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\offline_venv\Scripts\python.exe -m pip install --no-index --find-links=C:\Users\chara\Desktop\AISYS\aisys-rfid-library\wheels -r requirements.txt
+
+Looking in links: c:\Users\chara\Desktop\AISYS\aisys-rfid-library\wheels
+Processing .\wheels\django-5.2.17-py3-none-any.whl (from -r requirements.txt (line 1))
+Processing .\wheels\openpyxl-3.1.5-py2.py3-none-any.whl (from -r requirements.txt (line 2))
+Processing .\wheels\asgiref-3.12.1-py3-none-any.whl (from Django==5.2.17->-r requirements.txt (line 1))
+Processing .\wheels\sqlparse-0.6.0-py3-none-any.whl (from Django==5.2.17->-r requirements.txt (line 1))
+Processing .\wheels\tzdata-2026.5-py2.py3-none-any.whl (from Django==5.2.17->-r requirements.txt (line 1))
+Processing .\wheels\et_xmlfile-2.0.0-py3-none-any.whl (from openpyxl==3.1.5->-r requirements.txt (line 2))
+Installing collected packages: tzdata, sqlparse, et-xmlfile, asgiref, openpyxl, Django
+
+Successfully installed Django-5.2.17 asgiref-3.12.1 et-xmlfile-2.0.0 openpyxl-3.1.5 sqlparse-0.6.0 tzdata-2026.5

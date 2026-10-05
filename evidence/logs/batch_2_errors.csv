@@ -1,0 +1,1000 @@
+row_no,status,accession_no,title,problem
+8,REJECTED,IMP000007,,title is required
+14,REJECTED,,Economics fundamentals volume 13,accession_no is required
+30,REJECTED,IMP000029,Geography fundamentals volume 29,isbn is not 10 or 13 digits
+42,REJECTED,IMP000041,Philosophy fundamentals volume 41,year is not a valid year
+108,REJECTED,IMP000107,,title is required
+114,REJECTED,,Computing fundamentals volume 113,accession_no is required
+130,REJECTED,IMP000129,Computing fundamentals volume 129,isbn is not 10 or 13 digits
+142,REJECTED,IMP000141,Geography fundamentals volume 141,year is not a valid year
+154,DUPLICATE,IMP000103,Biology fundamentals volume 153,accession_no repeated earlier in the file (first occurrence kept)
+208,REJECTED,IMP000207,,title is required
+214,REJECTED,,History fundamentals volume 213,accession_no is required
+230,REJECTED,IMP000229,Economics fundamentals volume 229,isbn is not 10 or 13 digits
+242,REJECTED,IMP000241,Physics fundamentals volume 241,year is not a valid year
+254,DUPLICATE,IMP000203,History fundamentals volume 253,accession_no repeated earlier in the file (first occurrence kept)
+308,REJECTED,IMP000307,,title is required
+314,REJECTED,,Computing fundamentals volume 313,accession_no is required
+330,REJECTED,IMP000329,History fundamentals volume 329,isbn is not 10 or 13 digits
+342,REJECTED,IMP000341,Computing fundamentals volume 341,year is not a valid year
+354,DUPLICATE,IMP000303,Mathematics fundamentals volume 353,accession_no repeated earlier in the file (first occurrence kept)
+408,REJECTED,IMP000407,,title is required
+414,REJECTED,,Computing fundamentals volume 413,accession_no is required
+430,REJECTED,IMP000429,Mathematics fundamentals volume 429,isbn is not 10 or 13 digits
+442,REJECTED,IMP000441,Chemistry fundamentals volume 441,year is not a valid year
+454,DUPLICATE,IMP000403,History fundamentals volume 453,accession_no repeated earlier in the file (first occurrence kept)
+508,REJECTED,IMP000507,,title is required
+514,REJECTED,,History fundamentals volume 513,accession_no is required
+530,REJECTED,IMP000529,Biology fundamentals volume 529,isbn is not 10 or 13 digits
+542,REJECTED,IMP000541,Economics fundamentals volume 541,year is not a valid year
+554,DUPLICATE,IMP000503,History fundamentals volume 553,accession_no repeated earlier in the file (first occurrence kept)
+608,REJECTED,IMP000607,,title is required
+614,REJECTED,,Biology fundamentals volume 613,accession_no is required
+630,REJECTED,IMP000629,Economics fundamentals volume 629,isbn is not 10 or 13 digits
+642,REJECTED,IMP000641,History fundamentals volume 641,year is not a valid year
+654,DUPLICATE,IMP000603,Geography fundamentals volume 653,accession_no repeated earlier in the file (first occurrence kept)
+708,REJECTED,IMP000707,,title is required
+714,REJECTED,,Biology fundamentals volume 713,accession_no is required
+730,REJECTED,IMP000729,Mathematics fundamentals volume 729,isbn is not 10 or 13 digits
+742,REJECTED,IMP000741,Economics fundamentals volume 741,year is not a valid year
+754,DUPLICATE,IMP000703,Physics fundamentals volume 753,accession_no repeated earlier in the file (first occurrence kept)
+808,REJECTED,IMP000807,,title is required
+814,REJECTED,,History fundamentals volume 813,accession_no is required
+830,REJECTED,IMP000829,Economics fundamentals volume 829,isbn is not 10 or 13 digits
+842,REJECTED,IMP000841,History fundamentals volume 841,year is not a valid year
+854,DUPLICATE,IMP000803,Computing fundamentals volume 853,accession_no repeated earlier in the file (first occurrence kept)
+908,REJECTED,IMP000907,,title is required
+914,REJECTED,,Literature fundamentals volume 913,accession_no is required
+930,REJECTED,IMP000929,History fundamentals volume 929,isbn is not 10 or 13 digits
+942,REJECTED,IMP000941,History fundamentals volume 941,year is not a valid year
+954,DUPLICATE,IMP000903,History fundamentals volume 953,accession_no repeated earlier in the file (first occurrence kept)
+1008,REJECTED,IMP001007,,title is required
+1014,REJECTED,,Geography fundamentals volume 1013,accession_no is required
+1030,REJECTED,IMP001029,Mathematics fundamentals volume 1029,isbn is not 10 or 13 digits
+1042,REJECTED,IMP001041,Computing fundamentals volume 1041,year is not a valid year
+1054,DUPLICATE,IMP001003,Mathematics fundamentals volume 1053,accession_no repeated earlier in the file (first occurrence kept)
+1108,REJECTED,IMP001107,,title is required
+1114,REJECTED,,Chemistry fundamentals volume 1113,accession_no is required
+1130,REJECTED,IMP001129,Geography fundamentals volume 1129,isbn is not 10 or 13 digits
+1142,REJECTED,IMP001141,Literature fundamentals volume 1141,year is not a valid year
+1154,DUPLICATE,IMP001103,History fundamentals volume 1153,accession_no repeated earlier in the file (first occurrence kept)
+1208,REJECTED,IMP001207,,title is required
+1214,REJECTED,,Literature fundamentals volume 1213,accession_no is required
+1230,REJECTED,IMP001229,Chemistry fundamentals volume 1229,isbn is not 10 or 13 digits
+1242,REJECTED,IMP001241,History fundamentals volume 1241,year is not a valid year
+1254,DUPLICATE,IMP001203,Geography fundamentals volume 1253,accession_no repeated earlier in the file (first occurrence kept)
+1308,REJECTED,IMP001307,,title is required
+1314,REJECTED,,Literature fundamentals volume 1313,accession_no is required
+1330,REJECTED,IMP001329,Literature fundamentals volume 1329,isbn is not 10 or 13 digits
+1342,REJECTED,IMP001341,Geography fundamentals volume 1341,year is not a valid year
+1354,DUPLICATE,IMP001303,Geography fundamentals volume 1353,accession_no repeated earlier in the file (first occurrence kept)
+1408,REJECTED,IMP001407,,title is required
+1414,REJECTED,,Mathematics fundamentals volume 1413,accession_no is required
+1430,REJECTED,IMP001429,Economics fundamentals volume 1429,isbn is not 10 or 13 digits
+1442,REJECTED,IMP001441,Philosophy fundamentals volume 1441,year is not a valid year
+1454,DUPLICATE,IMP001403,Literature fundamentals volume 1453,accession_no repeated earlier in the file (first occurrence kept)
+1508,REJECTED,IMP001507,,title is required
+1514,REJECTED,,Mathematics fundamentals volume 1513,accession_no is required
+1530,REJECTED,IMP001529,Chemistry fundamentals volume 1529,isbn is not 10 or 13 digits
+1542,REJECTED,IMP001541,Physics fundamentals volume 1541,year is not a valid year
+1554,DUPLICATE,IMP001503,Geography fundamentals volume 1553,accession_no repeated earlier in the file (first occurrence kept)
+1608,REJECTED,IMP001607,,title is required
+1614,REJECTED,,Biology fundamentals volume 1613,accession_no is required
+1630,REJECTED,IMP001629,Economics fundamentals volume 1629,isbn is not 10 or 13 digits
+1642,REJECTED,IMP001641,Chemistry fundamentals volume 1641,year is not a valid year
+1654,DUPLICATE,IMP001603,Chemistry fundamentals volume 1653,accession_no repeated earlier in the file (first occurrence kept)
+1708,REJECTED,IMP001707,,title is required
+1714,REJECTED,,Geography fundamentals volume 1713,accession_no is required
+1730,REJECTED,IMP001729,Literature fundamentals volume 1729,isbn is not 10 or 13 digits
+1742,REJECTED,IMP001741,Biology fundamentals volume 1741,year is not a valid year
+1754,DUPLICATE,IMP001703,Chemistry fundamentals volume 1753,accession_no repeated earlier in the file (first occurrence kept)
+1808,REJECTED,IMP001807,,title is required
+1814,REJECTED,,Biology fundamentals volume 1813,accession_no is required
+1830,REJECTED,IMP001829,History fundamentals volume 1829,isbn is not 10 or 13 digits
+1842,REJECTED,IMP001841,Biology fundamentals volume 1841,year is not a valid year
+1854,DUPLICATE,IMP001803,History fundamentals volume 1853,accession_no repeated earlier in the file (first occurrence kept)
+1908,REJECTED,IMP001907,,title is required
+1914,REJECTED,,Physics fundamentals volume 1913,accession_no is required
+1930,REJECTED,IMP001929,Chemistry fundamentals volume 1929,isbn is not 10 or 13 digits
+1942,REJECTED,IMP001941,Literature fundamentals volume 1941,year is not a valid year
+1954,DUPLICATE,IMP001903,Geography fundamentals volume 1953,accession_no repeated earlier in the file (first occurrence kept)
+2008,REJECTED,IMP002007,,title is required
+2014,REJECTED,,Philosophy fundamentals volume 2013,accession_no is required
+2030,REJECTED,IMP002029,Physics fundamentals volume 2029,isbn is not 10 or 13 digits
+2042,REJECTED,IMP002041,History fundamentals volume 2041,year is not a valid year
+2054,DUPLICATE,IMP002003,Geography fundamentals volume 2053,accession_no repeated earlier in the file (first occurrence kept)
+2108,REJECTED,IMP002107,,title is required
+2114,REJECTED,,Biology fundamentals volume 2113,accession_no is required
+2130,REJECTED,IMP002129,Economics fundamentals volume 2129,isbn is not 10 or 13 digits
+2142,REJECTED,IMP002141,Literature fundamentals volume 2141,year is not a valid year
+2154,DUPLICATE,IMP002103,Literature fundamentals volume 2153,accession_no repeated earlier in the file (first occurrence kept)
+2208,REJECTED,IMP002207,,title is required
+2214,REJECTED,,Biology fundamentals volume 2213,accession_no is required
+2230,REJECTED,IMP002229,Philosophy fundamentals volume 2229,isbn is not 10 or 13 digits
+2242,REJECTED,IMP002241,Geography fundamentals volume 2241,year is not a valid year
+2254,DUPLICATE,IMP002203,Biology fundamentals volume 2253,accession_no repeated earlier in the file (first occurrence kept)
+2308,REJECTED,IMP002307,,title is required
+2314,REJECTED,,Biology fundamentals volume 2313,accession_no is required
+2330,REJECTED,IMP002329,Mathematics fundamentals volume 2329,isbn is not 10 or 13 digits
+2342,REJECTED,IMP002341,Biology fundamentals volume 2341,year is not a valid year
+2354,DUPLICATE,IMP002303,Philosophy fundamentals volume 2353,accession_no repeated earlier in the file (first occurrence kept)
+2408,REJECTED,IMP002407,,title is required
+2414,REJECTED,,Literature fundamentals volume 2413,accession_no is required
+2430,REJECTED,IMP002429,Economics fundamentals volume 2429,isbn is not 10 or 13 digits
+2442,REJECTED,IMP002441,Biology fundamentals volume 2441,year is not a valid year
+2454,DUPLICATE,IMP002403,Economics fundamentals volume 2453,accession_no repeated earlier in the file (first occurrence kept)
+2508,REJECTED,IMP002507,,title is required
+2514,REJECTED,,Geography fundamentals volume 2513,accession_no is required
+2530,REJECTED,IMP002529,Philosophy fundamentals volume 2529,isbn is not 10 or 13 digits
+2542,REJECTED,IMP002541,Mathematics fundamentals volume 2541,year is not a valid year
+2554,DUPLICATE,IMP002503,Geography fundamentals volume 2553,accession_no repeated earlier in the file (first occurrence kept)
+2608,REJECTED,IMP002607,,title is required
+2614,REJECTED,,Geography fundamentals volume 2613,accession_no is required
+2630,REJECTED,IMP002629,Geography fundamentals volume 2629,isbn is not 10 or 13 digits
+2642,REJECTED,IMP002641,History fundamentals volume 2641,year is not a valid year
+2654,DUPLICATE,IMP002603,Chemistry fundamentals volume 2653,accession_no repeated earlier in the file (first occurrence kept)
+2708,REJECTED,IMP002707,,title is required
+2714,REJECTED,,Physics fundamentals volume 2713,accession_no is required
+2730,REJECTED,IMP002729,Chemistry fundamentals volume 2729,isbn is not 10 or 13 digits
+2742,REJECTED,IMP002741,Physics fundamentals volume 2741,year is not a valid year
+2754,DUPLICATE,IMP002703,History fundamentals volume 2753,accession_no repeated earlier in the file (first occurrence kept)
+2808,REJECTED,IMP002807,,title is required
+2814,REJECTED,,Biology fundamentals volume 2813,accession_no is required
+2830,REJECTED,IMP002829,Literature fundamentals volume 2829,isbn is not 10 or 13 digits
+2842,REJECTED,IMP002841,Physics fundamentals volume 2841,year is not a valid year
+2854,DUPLICATE,IMP002803,Biology fundamentals volume 2853,accession_no repeated earlier in the file (first occurrence kept)
+2908,REJECTED,IMP002907,,title is required
+2914,REJECTED,,Mathematics fundamentals volume 2913,accession_no is required
+2930,REJECTED,IMP002929,History fundamentals volume 2929,isbn is not 10 or 13 digits
+2942,REJECTED,IMP002941,Geography fundamentals volume 2941,year is not a valid year
+2954,DUPLICATE,IMP002903,Biology fundamentals volume 2953,accession_no repeated earlier in the file (first occurrence kept)
+3008,REJECTED,IMP003007,,title is required
+3014,REJECTED,,Biology fundamentals volume 3013,accession_no is required
+3030,REJECTED,IMP003029,Philosophy fundamentals volume 3029,isbn is not 10 or 13 digits
+3042,REJECTED,IMP003041,Computing fundamentals volume 3041,year is not a valid year
+3054,DUPLICATE,IMP003003,Literature fundamentals volume 3053,accession_no repeated earlier in the file (first occurrence kept)
+3108,REJECTED,IMP003107,,title is required
+3114,REJECTED,,Mathematics fundamentals volume 3113,accession_no is required
+3130,REJECTED,IMP003129,History fundamentals volume 3129,isbn is not 10 or 13 digits
+3142,REJECTED,IMP003141,Physics fundamentals volume 3141,year is not a valid year
+3154,DUPLICATE,IMP003103,Literature fundamentals volume 3153,accession_no repeated earlier in the file (first occurrence kept)
+3208,REJECTED,IMP003207,,title is required
+3214,REJECTED,,Mathematics fundamentals volume 3213,accession_no is required
+3230,REJECTED,IMP003229,Mathematics fundamentals volume 3229,isbn is not 10 or 13 digits
+3242,REJECTED,IMP003241,Geography fundamentals volume 3241,year is not a valid year
+3254,DUPLICATE,IMP003203,Mathematics fundamentals volume 3253,accession_no repeated earlier in the file (first occurrence kept)
+3308,REJECTED,IMP003307,,title is required
+3314,REJECTED,,Economics fundamentals volume 3313,accession_no is required
+3330,REJECTED,IMP003329,Philosophy fundamentals volume 3329,isbn is not 10 or 13 digits
+3342,REJECTED,IMP003341,Mathematics fundamentals volume 3341,year is not a valid year
+3354,DUPLICATE,IMP003303,Philosophy fundamentals volume 3353,accession_no repeated earlier in the file (first occurrence kept)
+3408,REJECTED,IMP003407,,title is required
+3414,REJECTED,,Computing fundamentals volume 3413,accession_no is required
+3430,REJECTED,IMP003429,History fundamentals volume 3429,isbn is not 10 or 13 digits
+3442,REJECTED,IMP003441,Computing fundamentals volume 3441,year is not a valid year
+3454,DUPLICATE,IMP003403,Physics fundamentals volume 3453,accession_no repeated earlier in the file (first occurrence kept)
+3508,REJECTED,IMP003507,,title is required
+3514,REJECTED,,Economics fundamentals volume 3513,accession_no is required
+3530,REJECTED,IMP003529,Biology fundamentals volume 3529,isbn is not 10 or 13 digits
+3542,REJECTED,IMP003541,Physics fundamentals volume 3541,year is not a valid year
+3554,DUPLICATE,IMP003503,History fundamentals volume 3553,accession_no repeated earlier in the file (first occurrence kept)
+3608,REJECTED,IMP003607,,title is required
+3614,REJECTED,,Literature fundamentals volume 3613,accession_no is required
+3630,REJECTED,IMP003629,Philosophy fundamentals volume 3629,isbn is not 10 or 13 digits
+3642,REJECTED,IMP003641,Biology fundamentals volume 3641,year is not a valid year
+3654,DUPLICATE,IMP003603,History fundamentals volume 3653,accession_no repeated earlier in the file (first occurrence kept)
+3708,REJECTED,IMP003707,,title is required
+3714,REJECTED,,Philosophy fundamentals volume 3713,accession_no is required
+3730,REJECTED,IMP003729,Chemistry fundamentals volume 3729,isbn is not 10 or 13 digits
+3742,REJECTED,IMP003741,Mathematics fundamentals volume 3741,year is not a valid year
+3754,DUPLICATE,IMP003703,Geography fundamentals volume 3753,accession_no repeated earlier in the file (first occurrence kept)
+3808,REJECTED,IMP003807,,title is required
+3814,REJECTED,,Economics fundamentals volume 3813,accession_no is required
+3830,REJECTED,IMP003829,Chemistry fundamentals volume 3829,isbn is not 10 or 13 digits
+3842,REJECTED,IMP003841,Computing fundamentals volume 3841,year is not a valid year
+3854,DUPLICATE,IMP003803,Physics fundamentals volume 3853,accession_no repeated earlier in the file (first occurrence kept)
+3908,REJECTED,IMP003907,,title is required
+3914,REJECTED,,Computing fundamentals volume 3913,accession_no is required
+3930,REJECTED,IMP003929,Philosophy fundamentals volume 3929,isbn is not 10 or 13 digits
+3942,REJECTED,IMP003941,Philosophy fundamentals volume 3941,year is not a valid year
+3954,DUPLICATE,IMP003903,Physics fundamentals volume 3953,accession_no repeated earlier in the file (first occurrence kept)
+4008,REJECTED,IMP004007,,title is required
+4014,REJECTED,,Physics fundamentals volume 4013,accession_no is required
+4030,REJECTED,IMP004029,Geography fundamentals volume 4029,isbn is not 10 or 13 digits
+4042,REJECTED,IMP004041,Literature fundamentals volume 4041,year is not a valid year
+4054,DUPLICATE,IMP004003,Economics fundamentals volume 4053,accession_no repeated earlier in the file (first occurrence kept)
+4108,REJECTED,IMP004107,,title is required
+4114,REJECTED,,Biology fundamentals volume 4113,accession_no is required
+4130,REJECTED,IMP004129,Computing fundamentals volume 4129,isbn is not 10 or 13 digits
+4142,REJECTED,IMP004141,Philosophy fundamentals volume 4141,year is not a valid year
+4154,DUPLICATE,IMP004103,Physics fundamentals volume 4153,accession_no repeated earlier in the file (first occurrence kept)
+4208,REJECTED,IMP004207,,title is required
+4214,REJECTED,,Biology fundamentals volume 4213,accession_no is required
+4230,REJECTED,IMP004229,Philosophy fundamentals volume 4229,isbn is not 10 or 13 digits
+4242,REJECTED,IMP004241,Geography fundamentals volume 4241,year is not a valid year
+4254,DUPLICATE,IMP004203,Geography fundamentals volume 4253,accession_no repeated earlier in the file (first occurrence kept)
+4308,REJECTED,IMP004307,,title is required
+4314,REJECTED,,Philosophy fundamentals volume 4313,accession_no is required
+4330,REJECTED,IMP004329,Geography fundamentals volume 4329,isbn is not 10 or 13 digits
+4342,REJECTED,IMP004341,Biology fundamentals volume 4341,year is not a valid year
+4354,DUPLICATE,IMP004303,Geography fundamentals volume 4353,accession_no repeated earlier in the file (first occurrence kept)
+4408,REJECTED,IMP004407,,title is required
+4414,REJECTED,,Philosophy fundamentals volume 4413,accession_no is required
+4430,REJECTED,IMP004429,Chemistry fundamentals volume 4429,isbn is not 10 or 13 digits
+4442,REJECTED,IMP004441,Computing fundamentals volume 4441,year is not a valid year
+4454,DUPLICATE,IMP004403,Computing fundamentals volume 4453,accession_no repeated earlier in the file (first occurrence kept)
+4508,REJECTED,IMP004507,,title is required
+4514,REJECTED,,Economics fundamentals volume 4513,accession_no is required
+4530,REJECTED,IMP004529,Physics fundamentals volume 4529,isbn is not 10 or 13 digits
+4542,REJECTED,IMP004541,Geography fundamentals volume 4541,year is not a valid year
+4554,DUPLICATE,IMP004503,Philosophy fundamentals volume 4553,accession_no repeated earlier in the file (first occurrence kept)
+4608,REJECTED,IMP004607,,title is required
+4614,REJECTED,,Geography fundamentals volume 4613,accession_no is required
+4630,REJECTED,IMP004629,Philosophy fundamentals volume 4629,isbn is not 10 or 13 digits
+4642,REJECTED,IMP004641,Economics fundamentals volume 4641,year is not a valid year
+4654,DUPLICATE,IMP004603,Philosophy fundamentals volume 4653,accession_no repeated earlier in the file (first occurrence kept)
+4708,REJECTED,IMP004707,,title is required
+4714,REJECTED,,Physics fundamentals volume 4713,accession_no is required
+4730,REJECTED,IMP004729,Mathematics fundamentals volume 4729,isbn is not 10 or 13 digits
+4742,REJECTED,IMP004741,Philosophy fundamentals volume 4741,year is not a valid year
+4754,DUPLICATE,IMP004703,Geography fundamentals volume 4753,accession_no repeated earlier in the file (first occurrence kept)
+4808,REJECTED,IMP004807,,title is required
+4814,REJECTED,,Biology fundamentals volume 4813,accession_no is required
+4830,REJECTED,IMP004829,Computing fundamentals volume 4829,isbn is not 10 or 13 digits
+4842,REJECTED,IMP004841,Physics fundamentals volume 4841,year is not a valid year
+4854,DUPLICATE,IMP004803,Literature fundamentals volume 4853,accession_no repeated earlier in the file (first occurrence kept)
+4908,REJECTED,IMP004907,,title is required
+4914,REJECTED,,Chemistry fundamentals volume 4913,accession_no is required
+4930,REJECTED,IMP004929,Literature fundamentals volume 4929,isbn is not 10 or 13 digits
+4942,REJECTED,IMP004941,History fundamentals volume 4941,year is not a valid year
+4954,DUPLICATE,IMP004903,Mathematics fundamentals volume 4953,accession_no repeated earlier in the file (first occurrence kept)
+5008,REJECTED,IMP005007,,title is required
+5014,REJECTED,,Economics fundamentals volume 5013,accession_no is required
+5030,REJECTED,IMP005029,Mathematics fundamentals volume 5029,isbn is not 10 or 13 digits
+5042,REJECTED,IMP005041,Economics fundamentals volume 5041,year is not a valid year
+5054,DUPLICATE,IMP005003,Chemistry fundamentals volume 5053,accession_no repeated earlier in the file (first occurrence kept)
+5108,REJECTED,IMP005107,,title is required
+5114,REJECTED,,Mathematics fundamentals volume 5113,accession_no is required
+5130,REJECTED,IMP005129,Geography fundamentals volume 5129,isbn is not 10 or 13 digits
+5142,REJECTED,IMP005141,History fundamentals volume 5141,year is not a valid year
+5154,DUPLICATE,IMP005103,Computing fundamentals volume 5153,accession_no repeated earlier in the file (first occurrence kept)
+5208,REJECTED,IMP005207,,title is required
+5214,REJECTED,,Chemistry fundamentals volume 5213,accession_no is required
+5230,REJECTED,IMP005229,Philosophy fundamentals volume 5229,isbn is not 10 or 13 digits
+5242,REJECTED,IMP005241,Physics fundamentals volume 5241,year is not a valid year
+5254,DUPLICATE,IMP005203,Computing fundamentals volume 5253,accession_no repeated earlier in the file (first occurrence kept)
+5308,REJECTED,IMP005307,,title is required
+5314,REJECTED,,Literature fundamentals volume 5313,accession_no is required
+5330,REJECTED,IMP005329,History fundamentals volume 5329,isbn is not 10 or 13 digits
+5342,REJECTED,IMP005341,Computing fundamentals volume 5341,year is not a valid year
+5354,DUPLICATE,IMP005303,Biology fundamentals volume 5353,accession_no repeated earlier in the file (first occurrence kept)
+5408,REJECTED,IMP005407,,title is required
+5414,REJECTED,,Philosophy fundamentals volume 5413,accession_no is required
+5430,REJECTED,IMP005429,History fundamentals volume 5429,isbn is not 10 or 13 digits
+5442,REJECTED,IMP005441,Physics fundamentals volume 5441,year is not a valid year
+5454,DUPLICATE,IMP005403,Geography fundamentals volume 5453,accession_no repeated earlier in the file (first occurrence kept)
+5508,REJECTED,IMP005507,,title is required
+5514,REJECTED,,Geography fundamentals volume 5513,accession_no is required
+5530,REJECTED,IMP005529,Literature fundamentals volume 5529,isbn is not 10 or 13 digits
+5542,REJECTED,IMP005541,Chemistry fundamentals volume 5541,year is not a valid year
+5554,DUPLICATE,IMP005503,Literature fundamentals volume 5553,accession_no repeated earlier in the file (first occurrence kept)
+5608,REJECTED,IMP005607,,title is required
+5614,REJECTED,,Literature fundamentals volume 5613,accession_no is required
+5630,REJECTED,IMP005629,Philosophy fundamentals volume 5629,isbn is not 10 or 13 digits
+5642,REJECTED,IMP005641,Computing fundamentals volume 5641,year is not a valid year
+5654,DUPLICATE,IMP005603,Geography fundamentals volume 5653,accession_no repeated earlier in the file (first occurrence kept)
+5708,REJECTED,IMP005707,,title is required
+5714,REJECTED,,Computing fundamentals volume 5713,accession_no is required
+5730,REJECTED,IMP005729,History fundamentals volume 5729,isbn is not 10 or 13 digits
+5742,REJECTED,IMP005741,Economics fundamentals volume 5741,year is not a valid year
+5754,DUPLICATE,IMP005703,Mathematics fundamentals volume 5753,accession_no repeated earlier in the file (first occurrence kept)
+5808,REJECTED,IMP005807,,title is required
+5814,REJECTED,,Literature fundamentals volume 5813,accession_no is required
+5830,REJECTED,IMP005829,Chemistry fundamentals volume 5829,isbn is not 10 or 13 digits
+5842,REJECTED,IMP005841,Economics fundamentals volume 5841,year is not a valid year
+5854,DUPLICATE,IMP005803,Philosophy fundamentals volume 5853,accession_no repeated earlier in the file (first occurrence kept)
+5908,REJECTED,IMP005907,,title is required
+5914,REJECTED,,Economics fundamentals volume 5913,accession_no is required
+5930,REJECTED,IMP005929,Chemistry fundamentals volume 5929,isbn is not 10 or 13 digits
+5942,REJECTED,IMP005941,Mathematics fundamentals volume 5941,year is not a valid year
+5954,DUPLICATE,IMP005903,Economics fundamentals volume 5953,accession_no repeated earlier in the file (first occurrence kept)
+6008,REJECTED,IMP006007,,title is required
+6014,REJECTED,,Literature fundamentals volume 6013,accession_no is required
+6030,REJECTED,IMP006029,Geography fundamentals volume 6029,isbn is not 10 or 13 digits
+6042,REJECTED,IMP006041,Biology fundamentals volume 6041,year is not a valid year
+6054,DUPLICATE,IMP006003,Chemistry fundamentals volume 6053,accession_no repeated earlier in the file (first occurrence kept)
+6108,REJECTED,IMP006107,,title is required
+6114,REJECTED,,Economics fundamentals volume 6113,accession_no is required
+6130,REJECTED,IMP006129,History fundamentals volume 6129,isbn is not 10 or 13 digits
+6142,REJECTED,IMP006141,Computing fundamentals volume 6141,year is not a valid year
+6154,DUPLICATE,IMP006103,Computing fundamentals volume 6153,accession_no repeated earlier in the file (first occurrence kept)
+6208,REJECTED,IMP006207,,title is required
+6214,REJECTED,,Mathematics fundamentals volume 6213,accession_no is required
+6230,REJECTED,IMP006229,Mathematics fundamentals volume 6229,isbn is not 10 or 13 digits
+6242,REJECTED,IMP006241,History fundamentals volume 6241,year is not a valid year
+6254,DUPLICATE,IMP006203,Mathematics fundamentals volume 6253,accession_no repeated earlier in the file (first occurrence kept)
+6308,REJECTED,IMP006307,,title is required
+6314,REJECTED,,Chemistry fundamentals volume 6313,accession_no is required
+6330,REJECTED,IMP006329,History fundamentals volume 6329,isbn is not 10 or 13 digits
+6342,REJECTED,IMP006341,Mathematics fundamentals volume 6341,year is not a valid year
+6354,DUPLICATE,IMP006303,Literature fundamentals volume 6353,accession_no repeated earlier in the file (first occurrence kept)
+6408,REJECTED,IMP006407,,title is required
+6414,REJECTED,,History fundamentals volume 6413,accession_no is required
+6430,REJECTED,IMP006429,Economics fundamentals volume 6429,isbn is not 10 or 13 digits
+6442,REJECTED,IMP006441,Economics fundamentals volume 6441,year is not a valid year
+6454,DUPLICATE,IMP006403,Economics fundamentals volume 6453,accession_no repeated earlier in the file (first occurrence kept)
+6508,REJECTED,IMP006507,,title is required
+6514,REJECTED,,Physics fundamentals volume 6513,accession_no is required
+6530,REJECTED,IMP006529,Literature fundamentals volume 6529,isbn is not 10 or 13 digits
+6542,REJECTED,IMP006541,Geography fundamentals volume 6541,year is not a valid year
+6554,DUPLICATE,IMP006503,Philosophy fundamentals volume 6553,accession_no repeated earlier in the file (first occurrence kept)
+6608,REJECTED,IMP006607,,title is required
+6614,REJECTED,,Economics fundamentals volume 6613,accession_no is required
+6630,REJECTED,IMP006629,Physics fundamentals volume 6629,isbn is not 10 or 13 digits
+6642,REJECTED,IMP006641,Biology fundamentals volume 6641,year is not a valid year
+6654,DUPLICATE,IMP006603,Economics fundamentals volume 6653,accession_no repeated earlier in the file (first occurrence kept)
+6708,REJECTED,IMP006707,,title is required
+6714,REJECTED,,Biology fundamentals volume 6713,accession_no is required
+6730,REJECTED,IMP006729,Philosophy fundamentals volume 6729,isbn is not 10 or 13 digits
+6742,REJECTED,IMP006741,Mathematics fundamentals volume 6741,year is not a valid year
+6754,DUPLICATE,IMP006703,Chemistry fundamentals volume 6753,accession_no repeated earlier in the file (first occurrence kept)
+6808,REJECTED,IMP006807,,title is required
+6814,REJECTED,,Mathematics fundamentals volume 6813,accession_no is required
+6830,REJECTED,IMP006829,Chemistry fundamentals volume 6829,isbn is not 10 or 13 digits
+6842,REJECTED,IMP006841,Physics fundamentals volume 6841,year is not a valid year
+6854,DUPLICATE,IMP006803,Philosophy fundamentals volume 6853,accession_no repeated earlier in the file (first occurrence kept)
+6908,REJECTED,IMP006907,,title is required
+6914,REJECTED,,Physics fundamentals volume 6913,accession_no is required
+6930,REJECTED,IMP006929,Economics fundamentals volume 6929,isbn is not 10 or 13 digits
+6942,REJECTED,IMP006941,Literature fundamentals volume 6941,year is not a valid year
+6954,DUPLICATE,IMP006903,Chemistry fundamentals volume 6953,accession_no repeated earlier in the file (first occurrence kept)
+7008,REJECTED,IMP007007,,title is required
+7014,REJECTED,,Philosophy fundamentals volume 7013,accession_no is required
+7030,REJECTED,IMP007029,History fundamentals volume 7029,isbn is not 10 or 13 digits
+7042,REJECTED,IMP007041,Computing fundamentals volume 7041,year is not a valid year
+7054,DUPLICATE,IMP007003,History fundamentals volume 7053,accession_no repeated earlier in the file (first occurrence kept)
+7108,REJECTED,IMP007107,,title is required
+7114,REJECTED,,Computing fundamentals volume 7113,accession_no is required
+7130,REJECTED,IMP007129,Mathematics fundamentals volume 7129,isbn is not 10 or 13 digits
+7142,REJECTED,IMP007141,Literature fundamentals volume 7141,year is not a valid year
+7154,DUPLICATE,IMP007103,Chemistry fundamentals volume 7153,accession_no repeated earlier in the file (first occurrence kept)
+7208,REJECTED,IMP007207,,title is required
+7214,REJECTED,,Mathematics fundamentals volume 7213,accession_no is required
+7230,REJECTED,IMP007229,Computing fundamentals volume 7229,isbn is not 10 or 13 digits
+7242,REJECTED,IMP007241,History fundamentals volume 7241,year is not a valid year
+7254,DUPLICATE,IMP007203,Chemistry fundamentals volume 7253,accession_no repeated earlier in the file (first occurrence kept)
+7308,REJECTED,IMP007307,,title is required
+7314,REJECTED,,Chemistry fundamentals volume 7313,accession_no is required
+7330,REJECTED,IMP007329,History fundamentals volume 7329,isbn is not 10 or 13 digits
+7342,REJECTED,IMP007341,Economics fundamentals volume 7341,year is not a valid year
+7354,DUPLICATE,IMP007303,Mathematics fundamentals volume 7353,accession_no repeated earlier in the file (first occurrence kept)
+7408,REJECTED,IMP007407,,title is required
+7414,REJECTED,,Geography fundamentals volume 7413,accession_no is required
+7430,REJECTED,IMP007429,Philosophy fundamentals volume 7429,isbn is not 10 or 13 digits
+7442,REJECTED,IMP007441,Philosophy fundamentals volume 7441,year is not a valid year
+7454,DUPLICATE,IMP007403,Physics fundamentals volume 7453,accession_no repeated earlier in the file (first occurrence kept)
+7508,REJECTED,IMP007507,,title is required
+7514,REJECTED,,Mathematics fundamentals volume 7513,accession_no is required
+7530,REJECTED,IMP007529,Biology fundamentals volume 7529,isbn is not 10 or 13 digits
+7542,REJECTED,IMP007541,Philosophy fundamentals volume 7541,year is not a valid year
+7554,DUPLICATE,IMP007503,Computing fundamentals volume 7553,accession_no repeated earlier in the file (first occurrence kept)
+7608,REJECTED,IMP007607,,title is required
+7614,REJECTED,,Economics fundamentals volume 7613,accession_no is required
+7630,REJECTED,IMP007629,History fundamentals volume 7629,isbn is not 10 or 13 digits
+7642,REJECTED,IMP007641,Literature fundamentals volume 7641,year is not a valid year
+7654,DUPLICATE,IMP007603,Computing fundamentals volume 7653,accession_no repeated earlier in the file (first occurrence kept)
+7708,REJECTED,IMP007707,,title is required
+7714,REJECTED,,Literature fundamentals volume 7713,accession_no is required
+7730,REJECTED,IMP007729,History fundamentals volume 7729,isbn is not 10 or 13 digits
+7742,REJECTED,IMP007741,Literature fundamentals volume 7741,year is not a valid year
+7754,DUPLICATE,IMP007703,Economics fundamentals volume 7753,accession_no repeated earlier in the file (first occurrence kept)
+7808,REJECTED,IMP007807,,title is required
+7814,REJECTED,,Mathematics fundamentals volume 7813,accession_no is required
+7830,REJECTED,IMP007829,Chemistry fundamentals volume 7829,isbn is not 10 or 13 digits
+7842,REJECTED,IMP007841,History fundamentals volume 7841,year is not a valid year
+7854,DUPLICATE,IMP007803,Chemistry fundamentals volume 7853,accession_no repeated earlier in the file (first occurrence kept)
+7908,REJECTED,IMP007907,,title is required
+7914,REJECTED,,Philosophy fundamentals volume 7913,accession_no is required
+7930,REJECTED,IMP007929,Physics fundamentals volume 7929,isbn is not 10 or 13 digits
+7942,REJECTED,IMP007941,Chemistry fundamentals volume 7941,year is not a valid year
+7954,DUPLICATE,IMP007903,Physics fundamentals volume 7953,accession_no repeated earlier in the file (first occurrence kept)
+8008,REJECTED,IMP008007,,title is required
+8014,REJECTED,,Economics fundamentals volume 8013,accession_no is required
+8030,REJECTED,IMP008029,Physics fundamentals volume 8029,isbn is not 10 or 13 digits
+8042,REJECTED,IMP008041,Geography fundamentals volume 8041,year is not a valid year
+8054,DUPLICATE,IMP008003,Physics fundamentals volume 8053,accession_no repeated earlier in the file (first occurrence kept)
+8108,REJECTED,IMP008107,,title is required
+8114,REJECTED,,Mathematics fundamentals volume 8113,accession_no is required
+8130,REJECTED,IMP008129,Literature fundamentals volume 8129,isbn is not 10 or 13 digits
+8142,REJECTED,IMP008141,Computing fundamentals volume 8141,year is not a valid year
+8154,DUPLICATE,IMP008103,Chemistry fundamentals volume 8153,accession_no repeated earlier in the file (first occurrence kept)
+8208,REJECTED,IMP008207,,title is required
+8214,REJECTED,,Chemistry fundamentals volume 8213,accession_no is required
+8230,REJECTED,IMP008229,History fundamentals volume 8229,isbn is not 10 or 13 digits
+8242,REJECTED,IMP008241,Literature fundamentals volume 8241,year is not a valid year
+8254,DUPLICATE,IMP008203,Philosophy fundamentals volume 8253,accession_no repeated earlier in the file (first occurrence kept)
+8308,REJECTED,IMP008307,,title is required
+8314,REJECTED,,Mathematics fundamentals volume 8313,accession_no is required
+8330,REJECTED,IMP008329,Geography fundamentals volume 8329,isbn is not 10 or 13 digits
+8342,REJECTED,IMP008341,History fundamentals volume 8341,year is not a valid year
+8354,DUPLICATE,IMP008303,Geography fundamentals volume 8353,accession_no repeated earlier in the file (first occurrence kept)
+8408,REJECTED,IMP008407,,title is required
+8414,REJECTED,,Philosophy fundamentals volume 8413,accession_no is required
+8430,REJECTED,IMP008429,Geography fundamentals volume 8429,isbn is not 10 or 13 digits
+8442,REJECTED,IMP008441,Physics fundamentals volume 8441,year is not a valid year
+8454,DUPLICATE,IMP008403,Literature fundamentals volume 8453,accession_no repeated earlier in the file (first occurrence kept)
+8508,REJECTED,IMP008507,,title is required
+8514,REJECTED,,Physics fundamentals volume 8513,accession_no is required
+8530,REJECTED,IMP008529,Physics fundamentals volume 8529,isbn is not 10 or 13 digits
+8542,REJECTED,IMP008541,Literature fundamentals volume 8541,year is not a valid year
+8554,DUPLICATE,IMP008503,Computing fundamentals volume 8553,accession_no repeated earlier in the file (first occurrence kept)
+8608,REJECTED,IMP008607,,title is required
+8614,REJECTED,,Computing fundamentals volume 8613,accession_no is required
+8630,REJECTED,IMP008629,History fundamentals volume 8629,isbn is not 10 or 13 digits
+8642,REJECTED,IMP008641,Physics fundamentals volume 8641,year is not a valid year
+8654,DUPLICATE,IMP008603,Biology fundamentals volume 8653,accession_no repeated earlier in the file (first occurrence kept)
+8708,REJECTED,IMP008707,,title is required
+8714,REJECTED,,Geography fundamentals volume 8713,accession_no is required
+8730,REJECTED,IMP008729,Geography fundamentals volume 8729,isbn is not 10 or 13 digits
+8742,REJECTED,IMP008741,Economics fundamentals volume 8741,year is not a valid year
+8754,DUPLICATE,IMP008703,Geography fundamentals volume 8753,accession_no repeated earlier in the file (first occurrence kept)
+8808,REJECTED,IMP008807,,title is required
+8814,REJECTED,,Literature fundamentals volume 8813,accession_no is required
+8830,REJECTED,IMP008829,Computing fundamentals volume 8829,isbn is not 10 or 13 digits
+8842,REJECTED,IMP008841,Computing fundamentals volume 8841,year is not a valid year
+8854,DUPLICATE,IMP008803,Computing fundamentals volume 8853,accession_no repeated earlier in the file (first occurrence kept)
+8908,REJECTED,IMP008907,,title is required
+8914,REJECTED,,History fundamentals volume 8913,accession_no is required
+8930,REJECTED,IMP008929,Economics fundamentals volume 8929,isbn is not 10 or 13 digits
+8942,REJECTED,IMP008941,Chemistry fundamentals volume 8941,year is not a valid year
+8954,DUPLICATE,IMP008903,Chemistry fundamentals volume 8953,accession_no repeated earlier in the file (first occurrence kept)
+9008,REJECTED,IMP009007,,title is required
+9014,REJECTED,,Literature fundamentals volume 9013,accession_no is required
+9030,REJECTED,IMP009029,Computing fundamentals volume 9029,isbn is not 10 or 13 digits
+9042,REJECTED,IMP009041,Economics fundamentals volume 9041,year is not a valid year
+9054,DUPLICATE,IMP009003,Physics fundamentals volume 9053,accession_no repeated earlier in the file (first occurrence kept)
+9108,REJECTED,IMP009107,,title is required
+9114,REJECTED,,Physics fundamentals volume 9113,accession_no is required
+9130,REJECTED,IMP009129,Geography fundamentals volume 9129,isbn is not 10 or 13 digits
+9142,REJECTED,IMP009141,Philosophy fundamentals volume 9141,year is not a valid year
+9154,DUPLICATE,IMP009103,Biology fundamentals volume 9153,accession_no repeated earlier in the file (first occurrence kept)
+9208,REJECTED,IMP009207,,title is required
+9214,REJECTED,,Computing fundamentals volume 9213,accession_no is required
+9230,REJECTED,IMP009229,Physics fundamentals volume 9229,isbn is not 10 or 13 digits
+9242,REJECTED,IMP009241,History fundamentals volume 9241,year is not a valid year
+9254,DUPLICATE,IMP009203,Physics fundamentals volume 9253,accession_no repeated earlier in the file (first occurrence kept)
+9308,REJECTED,IMP009307,,title is required
+9314,REJECTED,,Mathematics fundamentals volume 9313,accession_no is required
+9330,REJECTED,IMP009329,Chemistry fundamentals volume 9329,isbn is not 10 or 13 digits
+9342,REJECTED,IMP009341,Economics fundamentals volume 9341,year is not a valid year
+9354,DUPLICATE,IMP009303,Literature fundamentals volume 9353,accession_no repeated earlier in the file (first occurrence kept)
+9408,REJECTED,IMP009407,,title is required
+9414,REJECTED,,Computing fundamentals volume 9413,accession_no is required
+9430,REJECTED,IMP009429,Chemistry fundamentals volume 9429,isbn is not 10 or 13 digits
+9442,REJECTED,IMP009441,Literature fundamentals volume 9441,year is not a valid year
+9454,DUPLICATE,IMP009403,History fundamentals volume 9453,accession_no repeated earlier in the file (first occurrence kept)
+9508,REJECTED,IMP009507,,title is required
+9514,REJECTED,,Economics fundamentals volume 9513,accession_no is required
+9530,REJECTED,IMP009529,Mathematics fundamentals volume 9529,isbn is not 10 or 13 digits
+9542,REJECTED,IMP009541,Mathematics fundamentals volume 9541,year is not a valid year
+9554,DUPLICATE,IMP009503,Chemistry fundamentals volume 9553,accession_no repeated earlier in the file (first occurrence kept)
+9608,REJECTED,IMP009607,,title is required
+9614,REJECTED,,History fundamentals volume 9613,accession_no is required
+9630,REJECTED,IMP009629,Mathematics fundamentals volume 9629,isbn is not 10 or 13 digits
+9642,REJECTED,IMP009641,Computing fundamentals volume 9641,year is not a valid year
+9654,DUPLICATE,IMP009603,Economics fundamentals volume 9653,accession_no repeated earlier in the file (first occurrence kept)
+9708,REJECTED,IMP009707,,title is required
+9714,REJECTED,,Philosophy fundamentals volume 9713,accession_no is required
+9730,REJECTED,IMP009729,History fundamentals volume 9729,isbn is not 10 or 13 digits
+9742,REJECTED,IMP009741,Chemistry fundamentals volume 9741,year is not a valid year
+9754,DUPLICATE,IMP009703,Biology fundamentals volume 9753,accession_no repeated earlier in the file (first occurrence kept)
+9808,REJECTED,IMP009807,,title is required
+9814,REJECTED,,Geography fundamentals volume 9813,accession_no is required
+9830,REJECTED,IMP009829,Computing fundamentals volume 9829,isbn is not 10 or 13 digits
+9842,REJECTED,IMP009841,Physics fundamentals volume 9841,year is not a valid year
+9854,DUPLICATE,IMP009803,Mathematics fundamentals volume 9853,accession_no repeated earlier in the file (first occurrence kept)
+9908,REJECTED,IMP009907,,title is required
+9914,REJECTED,,Philosophy fundamentals volume 9913,accession_no is required
+9930,REJECTED,IMP009929,Physics fundamentals volume 9929,isbn is not 10 or 13 digits
+9942,REJECTED,IMP009941,Chemistry fundamentals volume 9941,year is not a valid year
+9954,DUPLICATE,IMP009903,Computing fundamentals volume 9953,accession_no repeated earlier in the file (first occurrence kept)
+10008,REJECTED,IMP010007,,title is required
+10014,REJECTED,,History fundamentals volume 10013,accession_no is required
+10030,REJECTED,IMP010029,Computing fundamentals volume 10029,isbn is not 10 or 13 digits
+10042,REJECTED,IMP010041,Literature fundamentals volume 10041,year is not a valid year
+10054,DUPLICATE,IMP010003,Biology fundamentals volume 10053,accession_no repeated earlier in the file (first occurrence kept)
+10108,REJECTED,IMP010107,,title is required
+10114,REJECTED,,Literature fundamentals volume 10113,accession_no is required
+10130,REJECTED,IMP010129,History fundamentals volume 10129,isbn is not 10 or 13 digits
+10142,REJECTED,IMP010141,Geography fundamentals volume 10141,year is not a valid year
+10154,DUPLICATE,IMP010103,History fundamentals volume 10153,accession_no repeated earlier in the file (first occurrence kept)
+10208,REJECTED,IMP010207,,title is required
+10214,REJECTED,,Economics fundamentals volume 10213,accession_no is required
+10230,REJECTED,IMP010229,Biology fundamentals volume 10229,isbn is not 10 or 13 digits
+10242,REJECTED,IMP010241,Geography fundamentals volume 10241,year is not a valid year
+10254,DUPLICATE,IMP010203,Biology fundamentals volume 10253,accession_no repeated earlier in the file (first occurrence kept)
+10308,REJECTED,IMP010307,,title is required
+10314,REJECTED,,Physics fundamentals volume 10313,accession_no is required
+10330,REJECTED,IMP010329,Chemistry fundamentals volume 10329,isbn is not 10 or 13 digits
+10342,REJECTED,IMP010341,Economics fundamentals volume 10341,year is not a valid year
+10354,DUPLICATE,IMP010303,Geography fundamentals volume 10353,accession_no repeated earlier in the file (first occurrence kept)
+10408,REJECTED,IMP010407,,title is required
+10414,REJECTED,,Geography fundamentals volume 10413,accession_no is required
+10430,REJECTED,IMP010429,Literature fundamentals volume 10429,isbn is not 10 or 13 digits
+10442,REJECTED,IMP010441,Literature fundamentals volume 10441,year is not a valid year
+10454,DUPLICATE,IMP010403,Physics fundamentals volume 10453,accession_no repeated earlier in the file (first occurrence kept)
+10508,REJECTED,IMP010507,,title is required
+10514,REJECTED,,Computing fundamentals volume 10513,accession_no is required
+10530,REJECTED,IMP010529,Chemistry fundamentals volume 10529,isbn is not 10 or 13 digits
+10542,REJECTED,IMP010541,Literature fundamentals volume 10541,year is not a valid year
+10554,DUPLICATE,IMP010503,Mathematics fundamentals volume 10553,accession_no repeated earlier in the file (first occurrence kept)
+10608,REJECTED,IMP010607,,title is required
+10614,REJECTED,,Literature fundamentals volume 10613,accession_no is required
+10630,REJECTED,IMP010629,Economics fundamentals volume 10629,isbn is not 10 or 13 digits
+10642,REJECTED,IMP010641,Physics fundamentals volume 10641,year is not a valid year
+10654,DUPLICATE,IMP010603,Geography fundamentals volume 10653,accession_no repeated earlier in the file (first occurrence kept)
+10708,REJECTED,IMP010707,,title is required
+10714,REJECTED,,Mathematics fundamentals volume 10713,accession_no is required
+10730,REJECTED,IMP010729,Computing fundamentals volume 10729,isbn is not 10 or 13 digits
+10742,REJECTED,IMP010741,History fundamentals volume 10741,year is not a valid year
+10754,DUPLICATE,IMP010703,Mathematics fundamentals volume 10753,accession_no repeated earlier in the file (first occurrence kept)
+10808,REJECTED,IMP010807,,title is required
+10814,REJECTED,,Literature fundamentals volume 10813,accession_no is required
+10830,REJECTED,IMP010829,History fundamentals volume 10829,isbn is not 10 or 13 digits
+10842,REJECTED,IMP010841,Biology fundamentals volume 10841,year is not a valid year
+10854,DUPLICATE,IMP010803,Philosophy fundamentals volume 10853,accession_no repeated earlier in the file (first occurrence kept)
+10908,REJECTED,IMP010907,,title is required
+10914,REJECTED,,Physics fundamentals volume 10913,accession_no is required
+10930,REJECTED,IMP010929,Literature fundamentals volume 10929,isbn is not 10 or 13 digits
+10942,REJECTED,IMP010941,Geography fundamentals volume 10941,year is not a valid year
+10954,DUPLICATE,IMP010903,Economics fundamentals volume 10953,accession_no repeated earlier in the file (first occurrence kept)
+11008,REJECTED,IMP011007,,title is required
+11014,REJECTED,,History fundamentals volume 11013,accession_no is required
+11030,REJECTED,IMP011029,Biology fundamentals volume 11029,isbn is not 10 or 13 digits
+11042,REJECTED,IMP011041,History fundamentals volume 11041,year is not a valid year
+11054,DUPLICATE,IMP011003,History fundamentals volume 11053,accession_no repeated earlier in the file (first occurrence kept)
+11108,REJECTED,IMP011107,,title is required
+11114,REJECTED,,Physics fundamentals volume 11113,accession_no is required
+11130,REJECTED,IMP011129,Chemistry fundamentals volume 11129,isbn is not 10 or 13 digits
+11142,REJECTED,IMP011141,History fundamentals volume 11141,year is not a valid year
+11154,DUPLICATE,IMP011103,Literature fundamentals volume 11153,accession_no repeated earlier in the file (first occurrence kept)
+11208,REJECTED,IMP011207,,title is required
+11214,REJECTED,,Computing fundamentals volume 11213,accession_no is required
+11230,REJECTED,IMP011229,Mathematics fundamentals volume 11229,isbn is not 10 or 13 digits
+11242,REJECTED,IMP011241,Biology fundamentals volume 11241,year is not a valid year
+11254,DUPLICATE,IMP011203,Geography fundamentals volume 11253,accession_no repeated earlier in the file (first occurrence kept)
+11308,REJECTED,IMP011307,,title is required
+11314,REJECTED,,History fundamentals volume 11313,accession_no is required
+11330,REJECTED,IMP011329,Chemistry fundamentals volume 11329,isbn is not 10 or 13 digits
+11342,REJECTED,IMP011341,Geography fundamentals volume 11341,year is not a valid year
+11354,DUPLICATE,IMP011303,Mathematics fundamentals volume 11353,accession_no repeated earlier in the file (first occurrence kept)
+11408,REJECTED,IMP011407,,title is required
+11414,REJECTED,,History fundamentals volume 11413,accession_no is required
+11430,REJECTED,IMP011429,Economics fundamentals volume 11429,isbn is not 10 or 13 digits
+11442,REJECTED,IMP011441,Geography fundamentals volume 11441,year is not a valid year
+11454,DUPLICATE,IMP011403,Computing fundamentals volume 11453,accession_no repeated earlier in the file (first occurrence kept)
+11508,REJECTED,IMP011507,,title is required
+11514,REJECTED,,Physics fundamentals volume 11513,accession_no is required
+11530,REJECTED,IMP011529,Chemistry fundamentals volume 11529,isbn is not 10 or 13 digits
+11542,REJECTED,IMP011541,Mathematics fundamentals volume 11541,year is not a valid year
+11554,DUPLICATE,IMP011503,Computing fundamentals volume 11553,accession_no repeated earlier in the file (first occurrence kept)
+11608,REJECTED,IMP011607,,title is required
+11614,REJECTED,,Economics fundamentals volume 11613,accession_no is required
+11630,REJECTED,IMP011629,Physics fundamentals volume 11629,isbn is not 10 or 13 digits
+11642,REJECTED,IMP011641,Geography fundamentals volume 11641,year is not a valid year
+11654,DUPLICATE,IMP011603,Physics fundamentals volume 11653,accession_no repeated earlier in the file (first occurrence kept)
+11708,REJECTED,IMP011707,,title is required
+11714,REJECTED,,Chemistry fundamentals volume 11713,accession_no is required
+11730,REJECTED,IMP011729,Biology fundamentals volume 11729,isbn is not 10 or 13 digits
+11742,REJECTED,IMP011741,Mathematics fundamentals volume 11741,year is not a valid year
+11754,DUPLICATE,IMP011703,Mathematics fundamentals volume 11753,accession_no repeated earlier in the file (first occurrence kept)
+11808,REJECTED,IMP011807,,title is required
+11814,REJECTED,,Mathematics fundamentals volume 11813,accession_no is required
+11830,REJECTED,IMP011829,History fundamentals volume 11829,isbn is not 10 or 13 digits
+11842,REJECTED,IMP011841,Computing fundamentals volume 11841,year is not a valid year
+11854,DUPLICATE,IMP011803,Physics fundamentals volume 11853,accession_no repeated earlier in the file (first occurrence kept)
+11908,REJECTED,IMP011907,,title is required
+11914,REJECTED,,Physics fundamentals volume 11913,accession_no is required
+11930,REJECTED,IMP011929,Literature fundamentals volume 11929,isbn is not 10 or 13 digits
+11942,REJECTED,IMP011941,History fundamentals volume 11941,year is not a valid year
+11954,DUPLICATE,IMP011903,Chemistry fundamentals volume 11953,accession_no repeated earlier in the file (first occurrence kept)
+12008,REJECTED,IMP012007,,title is required
+12014,REJECTED,,Geography fundamentals volume 12013,accession_no is required
+12030,REJECTED,IMP012029,Literature fundamentals volume 12029,isbn is not 10 or 13 digits
+12042,REJECTED,IMP012041,Mathematics fundamentals volume 12041,year is not a valid year
+12054,DUPLICATE,IMP012003,Physics fundamentals volume 12053,accession_no repeated earlier in the file (first occurrence kept)
+12108,REJECTED,IMP012107,,title is required
+12114,REJECTED,,Physics fundamentals volume 12113,accession_no is required
+12130,REJECTED,IMP012129,Literature fundamentals volume 12129,isbn is not 10 or 13 digits
+12142,REJECTED,IMP012141,Physics fundamentals volume 12141,year is not a valid year
+12154,DUPLICATE,IMP012103,Economics fundamentals volume 12153,accession_no repeated earlier in the file (first occurrence kept)
+12208,REJECTED,IMP012207,,title is required
+12214,REJECTED,,Economics fundamentals volume 12213,accession_no is required
+12230,REJECTED,IMP012229,Geography fundamentals volume 12229,isbn is not 10 or 13 digits
+12242,REJECTED,IMP012241,Literature fundamentals volume 12241,year is not a valid year
+12254,DUPLICATE,IMP012203,Physics fundamentals volume 12253,accession_no repeated earlier in the file (first occurrence kept)
+12308,REJECTED,IMP012307,,title is required
+12314,REJECTED,,Chemistry fundamentals volume 12313,accession_no is required
+12330,REJECTED,IMP012329,Philosophy fundamentals volume 12329,isbn is not 10 or 13 digits
+12342,REJECTED,IMP012341,Philosophy fundamentals volume 12341,year is not a valid year
+12354,DUPLICATE,IMP012303,Economics fundamentals volume 12353,accession_no repeated earlier in the file (first occurrence kept)
+12408,REJECTED,IMP012407,,title is required
+12414,REJECTED,,History fundamentals volume 12413,accession_no is required
+12430,REJECTED,IMP012429,History fundamentals volume 12429,isbn is not 10 or 13 digits
+12442,REJECTED,IMP012441,History fundamentals volume 12441,year is not a valid year
+12454,DUPLICATE,IMP012403,Mathematics fundamentals volume 12453,accession_no repeated earlier in the file (first occurrence kept)
+12508,REJECTED,IMP012507,,title is required
+12514,REJECTED,,Computing fundamentals volume 12513,accession_no is required
+12530,REJECTED,IMP012529,History fundamentals volume 12529,isbn is not 10 or 13 digits
+12542,REJECTED,IMP012541,Chemistry fundamentals volume 12541,year is not a valid year
+12554,DUPLICATE,IMP012503,Physics fundamentals volume 12553,accession_no repeated earlier in the file (first occurrence kept)
+12608,REJECTED,IMP012607,,title is required
+12614,REJECTED,,Literature fundamentals volume 12613,accession_no is required
+12630,REJECTED,IMP012629,Biology fundamentals volume 12629,isbn is not 10 or 13 digits
+12642,REJECTED,IMP012641,Chemistry fundamentals volume 12641,year is not a valid year
+12654,DUPLICATE,IMP012603,Biology fundamentals volume 12653,accession_no repeated earlier in the file (first occurrence kept)
+12708,REJECTED,IMP012707,,title is required
+12714,REJECTED,,Biology fundamentals volume 12713,accession_no is required
+12730,REJECTED,IMP012729,Mathematics fundamentals volume 12729,isbn is not 10 or 13 digits
+12742,REJECTED,IMP012741,History fundamentals volume 12741,year is not a valid year
+12754,DUPLICATE,IMP012703,Mathematics fundamentals volume 12753,accession_no repeated earlier in the file (first occurrence kept)
+12808,REJECTED,IMP012807,,title is required
+12814,REJECTED,,Computing fundamentals volume 12813,accession_no is required
+12830,REJECTED,IMP012829,Computing fundamentals volume 12829,isbn is not 10 or 13 digits
+12842,REJECTED,IMP012841,Physics fundamentals volume 12841,year is not a valid year
+12854,DUPLICATE,IMP012803,History fundamentals volume 12853,accession_no repeated earlier in the file (first occurrence kept)
+12908,REJECTED,IMP012907,,title is required
+12914,REJECTED,,Mathematics fundamentals volume 12913,accession_no is required
+12930,REJECTED,IMP012929,Geography fundamentals volume 12929,isbn is not 10 or 13 digits
+12942,REJECTED,IMP012941,Mathematics fundamentals volume 12941,year is not a valid year
+12954,DUPLICATE,IMP012903,Economics fundamentals volume 12953,accession_no repeated earlier in the file (first occurrence kept)
+13008,REJECTED,IMP013007,,title is required
+13014,REJECTED,,Biology fundamentals volume 13013,accession_no is required
+13030,REJECTED,IMP013029,Physics fundamentals volume 13029,isbn is not 10 or 13 digits
+13042,REJECTED,IMP013041,Biology fundamentals volume 13041,year is not a valid year
+13054,DUPLICATE,IMP013003,Computing fundamentals volume 13053,accession_no repeated earlier in the file (first occurrence kept)
+13108,REJECTED,IMP013107,,title is required
+13114,REJECTED,,Geography fundamentals volume 13113,accession_no is required
+13130,REJECTED,IMP013129,Literature fundamentals volume 13129,isbn is not 10 or 13 digits
+13142,REJECTED,IMP013141,Computing fundamentals volume 13141,year is not a valid year
+13154,DUPLICATE,IMP013103,Biology fundamentals volume 13153,accession_no repeated earlier in the file (first occurrence kept)
+13208,REJECTED,IMP013207,,title is required
+13214,REJECTED,,Chemistry fundamentals volume 13213,accession_no is required
+13230,REJECTED,IMP013229,Mathematics fundamentals volume 13229,isbn is not 10 or 13 digits
+13242,REJECTED,IMP013241,History fundamentals volume 13241,year is not a valid year
+13254,DUPLICATE,IMP013203,Geography fundamentals volume 13253,accession_no repeated earlier in the file (first occurrence kept)
+13308,REJECTED,IMP013307,,title is required
+13314,REJECTED,,Literature fundamentals volume 13313,accession_no is required
+13330,REJECTED,IMP013329,Philosophy fundamentals volume 13329,isbn is not 10 or 13 digits
+13342,REJECTED,IMP013341,Computing fundamentals volume 13341,year is not a valid year
+13354,DUPLICATE,IMP013303,Computing fundamentals volume 13353,accession_no repeated earlier in the file (first occurrence kept)
+13408,REJECTED,IMP013407,,title is required
+13414,REJECTED,,Geography fundamentals volume 13413,accession_no is required
+13430,REJECTED,IMP013429,Computing fundamentals volume 13429,isbn is not 10 or 13 digits
+13442,REJECTED,IMP013441,Economics fundamentals volume 13441,year is not a valid year
+13454,DUPLICATE,IMP013403,Mathematics fundamentals volume 13453,accession_no repeated earlier in the file (first occurrence kept)
+13508,REJECTED,IMP013507,,title is required
+13514,REJECTED,,Literature fundamentals volume 13513,accession_no is required
+13530,REJECTED,IMP013529,Philosophy fundamentals volume 13529,isbn is not 10 or 13 digits
+13542,REJECTED,IMP013541,Literature fundamentals volume 13541,year is not a valid year
+13554,DUPLICATE,IMP013503,Philosophy fundamentals volume 13553,accession_no repeated earlier in the file (first occurrence kept)
+13608,REJECTED,IMP013607,,title is required
+13614,REJECTED,,History fundamentals volume 13613,accession_no is required
+13630,REJECTED,IMP013629,Philosophy fundamentals volume 13629,isbn is not 10 or 13 digits
+13642,REJECTED,IMP013641,Geography fundamentals volume 13641,year is not a valid year
+13654,DUPLICATE,IMP013603,Economics fundamentals volume 13653,accession_no repeated earlier in the file (first occurrence kept)
+13708,REJECTED,IMP013707,,title is required
+13714,REJECTED,,Economics fundamentals volume 13713,accession_no is required
+13730,REJECTED,IMP013729,Computing fundamentals volume 13729,isbn is not 10 or 13 digits
+13742,REJECTED,IMP013741,Biology fundamentals volume 13741,year is not a valid year
+13754,DUPLICATE,IMP013703,Philosophy fundamentals volume 13753,accession_no repeated earlier in the file (first occurrence kept)
+13808,REJECTED,IMP013807,,title is required
+13814,REJECTED,,Chemistry fundamentals volume 13813,accession_no is required
+13830,REJECTED,IMP013829,Chemistry fundamentals volume 13829,isbn is not 10 or 13 digits
+13842,REJECTED,IMP013841,Literature fundamentals volume 13841,year is not a valid year
+13854,DUPLICATE,IMP013803,Physics fundamentals volume 13853,accession_no repeated earlier in the file (first occurrence kept)
+13908,REJECTED,IMP013907,,title is required
+13914,REJECTED,,Philosophy fundamentals volume 13913,accession_no is required
+13930,REJECTED,IMP013929,Physics fundamentals volume 13929,isbn is not 10 or 13 digits
+13942,REJECTED,IMP013941,Philosophy fundamentals volume 13941,year is not a valid year
+13954,DUPLICATE,IMP013903,Biology fundamentals volume 13953,accession_no repeated earlier in the file (first occurrence kept)
+14008,REJECTED,IMP014007,,title is required
+14014,REJECTED,,Computing fundamentals volume 14013,accession_no is required
+14030,REJECTED,IMP014029,Literature fundamentals volume 14029,isbn is not 10 or 13 digits
+14042,REJECTED,IMP014041,Chemistry fundamentals volume 14041,year is not a valid year
+14054,DUPLICATE,IMP014003,Mathematics fundamentals volume 14053,accession_no repeated earlier in the file (first occurrence kept)
+14108,REJECTED,IMP014107,,title is required
+14114,REJECTED,,Mathematics fundamentals volume 14113,accession_no is required
+14130,REJECTED,IMP014129,Economics fundamentals volume 14129,isbn is not 10 or 13 digits
+14142,REJECTED,IMP014141,Economics fundamentals volume 14141,year is not a valid year
+14154,DUPLICATE,IMP014103,Computing fundamentals volume 14153,accession_no repeated earlier in the file (first occurrence kept)
+14208,REJECTED,IMP014207,,title is required
+14214,REJECTED,,Chemistry fundamentals volume 14213,accession_no is required
+14230,REJECTED,IMP014229,Biology fundamentals volume 14229,isbn is not 10 or 13 digits
+14242,REJECTED,IMP014241,Geography fundamentals volume 14241,year is not a valid year
+14254,DUPLICATE,IMP014203,Mathematics fundamentals volume 14253,accession_no repeated earlier in the file (first occurrence kept)
+14308,REJECTED,IMP014307,,title is required
+14314,REJECTED,,Economics fundamentals volume 14313,accession_no is required
+14330,REJECTED,IMP014329,Economics fundamentals volume 14329,isbn is not 10 or 13 digits
+14342,REJECTED,IMP014341,Economics fundamentals volume 14341,year is not a valid year
+14354,DUPLICATE,IMP014303,Philosophy fundamentals volume 14353,accession_no repeated earlier in the file (first occurrence kept)
+14408,REJECTED,IMP014407,,title is required
+14414,REJECTED,,Chemistry fundamentals volume 14413,accession_no is required
+14430,REJECTED,IMP014429,Mathematics fundamentals volume 14429,isbn is not 10 or 13 digits
+14442,REJECTED,IMP014441,Biology fundamentals volume 14441,year is not a valid year
+14454,DUPLICATE,IMP014403,Literature fundamentals volume 14453,accession_no repeated earlier in the file (first occurrence kept)
+14508,REJECTED,IMP014507,,title is required
+14514,REJECTED,,Philosophy fundamentals volume 14513,accession_no is required
+14530,REJECTED,IMP014529,Economics fundamentals volume 14529,isbn is not 10 or 13 digits
+14542,REJECTED,IMP014541,Computing fundamentals volume 14541,year is not a valid year
+14554,DUPLICATE,IMP014503,Physics fundamentals volume 14553,accession_no repeated earlier in the file (first occurrence kept)
+14608,REJECTED,IMP014607,,title is required
+14614,REJECTED,,History fundamentals volume 14613,accession_no is required
+14630,REJECTED,IMP014629,Biology fundamentals volume 14629,isbn is not 10 or 13 digits
+14642,REJECTED,IMP014641,Physics fundamentals volume 14641,year is not a valid year
+14654,DUPLICATE,IMP014603,History fundamentals volume 14653,accession_no repeated earlier in the file (first occurrence kept)
+14708,REJECTED,IMP014707,,title is required
+14714,REJECTED,,Physics fundamentals volume 14713,accession_no is required
+14730,REJECTED,IMP014729,Economics fundamentals volume 14729,isbn is not 10 or 13 digits
+14742,REJECTED,IMP014741,Economics fundamentals volume 14741,year is not a valid year
+14754,DUPLICATE,IMP014703,Biology fundamentals volume 14753,accession_no repeated earlier in the file (first occurrence kept)
+14808,REJECTED,IMP014807,,title is required
+14814,REJECTED,,Computing fundamentals volume 14813,accession_no is required
+14830,REJECTED,IMP014829,Philosophy fundamentals volume 14829,isbn is not 10 or 13 digits
+14842,REJECTED,IMP014841,Geography fundamentals volume 14841,year is not a valid year
+14854,DUPLICATE,IMP014803,Biology fundamentals volume 14853,accession_no repeated earlier in the file (first occurrence kept)
+14908,REJECTED,IMP014907,,title is required
+14914,REJECTED,,History fundamentals volume 14913,accession_no is required
+14930,REJECTED,IMP014929,Geography fundamentals volume 14929,isbn is not 10 or 13 digits
+14942,REJECTED,IMP014941,Literature fundamentals volume 14941,year is not a valid year
+14954,DUPLICATE,IMP014903,Chemistry fundamentals volume 14953,accession_no repeated earlier in the file (first occurrence kept)
+15008,REJECTED,IMP015007,,title is required
+15014,REJECTED,,Geography fundamentals volume 15013,accession_no is required
+15030,REJECTED,IMP015029,Literature fundamentals volume 15029,isbn is not 10 or 13 digits
+15042,REJECTED,IMP015041,Mathematics fundamentals volume 15041,year is not a valid year
+15054,DUPLICATE,IMP015003,Literature fundamentals volume 15053,accession_no repeated earlier in the file (first occurrence kept)
+15108,REJECTED,IMP015107,,title is required
+15114,REJECTED,,Philosophy fundamentals volume 15113,accession_no is required
+15130,REJECTED,IMP015129,Philosophy fundamentals volume 15129,isbn is not 10 or 13 digits
+15142,REJECTED,IMP015141,Biology fundamentals volume 15141,year is not a valid year
+15154,DUPLICATE,IMP015103,History fundamentals volume 15153,accession_no repeated earlier in the file (first occurrence kept)
+15208,REJECTED,IMP015207,,title is required
+15214,REJECTED,,Philosophy fundamentals volume 15213,accession_no is required
+15230,REJECTED,IMP015229,Chemistry fundamentals volume 15229,isbn is not 10 or 13 digits
+15242,REJECTED,IMP015241,Physics fundamentals volume 15241,year is not a valid year
+15254,DUPLICATE,IMP015203,Computing fundamentals volume 15253,accession_no repeated earlier in the file (first occurrence kept)
+15308,REJECTED,IMP015307,,title is required
+15314,REJECTED,,Economics fundamentals volume 15313,accession_no is required
+15330,REJECTED,IMP015329,History fundamentals volume 15329,isbn is not 10 or 13 digits
+15342,REJECTED,IMP015341,Physics fundamentals volume 15341,year is not a valid year
+15354,DUPLICATE,IMP015303,Mathematics fundamentals volume 15353,accession_no repeated earlier in the file (first occurrence kept)
+15408,REJECTED,IMP015407,,title is required
+15414,REJECTED,,Physics fundamentals volume 15413,accession_no is required
+15430,REJECTED,IMP015429,Geography fundamentals volume 15429,isbn is not 10 or 13 digits
+15442,REJECTED,IMP015441,Chemistry fundamentals volume 15441,year is not a valid year
+15454,DUPLICATE,IMP015403,History fundamentals volume 15453,accession_no repeated earlier in the file (first occurrence kept)
+15508,REJECTED,IMP015507,,title is required
+15514,REJECTED,,Biology fundamentals volume 15513,accession_no is required
+15530,REJECTED,IMP015529,Geography fundamentals volume 15529,isbn is not 10 or 13 digits
+15542,REJECTED,IMP015541,Literature fundamentals volume 15541,year is not a valid year
+15554,DUPLICATE,IMP015503,Literature fundamentals volume 15553,accession_no repeated earlier in the file (first occurrence kept)
+15608,REJECTED,IMP015607,,title is required
+15614,REJECTED,,Economics fundamentals volume 15613,accession_no is required
+15630,REJECTED,IMP015629,Computing fundamentals volume 15629,isbn is not 10 or 13 digits
+15642,REJECTED,IMP015641,Literature fundamentals volume 15641,year is not a valid year
+15654,DUPLICATE,IMP015603,Geography fundamentals volume 15653,accession_no repeated earlier in the file (first occurrence kept)
+15708,REJECTED,IMP015707,,title is required
+15714,REJECTED,,Literature fundamentals volume 15713,accession_no is required
+15730,REJECTED,IMP015729,Geography fundamentals volume 15729,isbn is not 10 or 13 digits
+15742,REJECTED,IMP015741,Physics fundamentals volume 15741,year is not a valid year
+15754,DUPLICATE,IMP015703,Philosophy fundamentals volume 15753,accession_no repeated earlier in the file (first occurrence kept)
+15808,REJECTED,IMP015807,,title is required
+15814,REJECTED,,Philosophy fundamentals volume 15813,accession_no is required
+15830,REJECTED,IMP015829,Computing fundamentals volume 15829,isbn is not 10 or 13 digits
+15842,REJECTED,IMP015841,Philosophy fundamentals volume 15841,year is not a valid year
+15854,DUPLICATE,IMP015803,Mathematics fundamentals volume 15853,accession_no repeated earlier in the file (first occurrence kept)
+15908,REJECTED,IMP015907,,title is required
+15914,REJECTED,,Philosophy fundamentals volume 15913,accession_no is required
+15930,REJECTED,IMP015929,Physics fundamentals volume 15929,isbn is not 10 or 13 digits
+15942,REJECTED,IMP015941,Geography fundamentals volume 15941,year is not a valid year
+15954,DUPLICATE,IMP015903,Philosophy fundamentals volume 15953,accession_no repeated earlier in the file (first occurrence kept)
+16008,REJECTED,IMP016007,,title is required
+16014,REJECTED,,Geography fundamentals volume 16013,accession_no is required
+16030,REJECTED,IMP016029,Physics fundamentals volume 16029,isbn is not 10 or 13 digits
+16042,REJECTED,IMP016041,Mathematics fundamentals volume 16041,year is not a valid year
+16054,DUPLICATE,IMP016003,Literature fundamentals volume 16053,accession_no repeated earlier in the file (first occurrence kept)
+16108,REJECTED,IMP016107,,title is required
+16114,REJECTED,,Mathematics fundamentals volume 16113,accession_no is required
+16130,REJECTED,IMP016129,Computing fundamentals volume 16129,isbn is not 10 or 13 digits
+16142,REJECTED,IMP016141,Literature fundamentals volume 16141,year is not a valid year
+16154,DUPLICATE,IMP016103,Mathematics fundamentals volume 16153,accession_no repeated earlier in the file (first occurrence kept)
+16208,REJECTED,IMP016207,,title is required
+16214,REJECTED,,Economics fundamentals volume 16213,accession_no is required
+16230,REJECTED,IMP016229,Mathematics fundamentals volume 16229,isbn is not 10 or 13 digits
+16242,REJECTED,IMP016241,Literature fundamentals volume 16241,year is not a valid year
+16254,DUPLICATE,IMP016203,History fundamentals volume 16253,accession_no repeated earlier in the file (first occurrence kept)
+16308,REJECTED,IMP016307,,title is required
+16314,REJECTED,,Economics fundamentals volume 16313,accession_no is required
+16330,REJECTED,IMP016329,Chemistry fundamentals volume 16329,isbn is not 10 or 13 digits
+16342,REJECTED,IMP016341,History fundamentals volume 16341,year is not a valid year
+16354,DUPLICATE,IMP016303,Economics fundamentals volume 16353,accession_no repeated earlier in the file (first occurrence kept)
+16408,REJECTED,IMP016407,,title is required
+16414,REJECTED,,Philosophy fundamentals volume 16413,accession_no is required
+16430,REJECTED,IMP016429,Physics fundamentals volume 16429,isbn is not 10 or 13 digits
+16442,REJECTED,IMP016441,Chemistry fundamentals volume 16441,year is not a valid year
+16454,DUPLICATE,IMP016403,History fundamentals volume 16453,accession_no repeated earlier in the file (first occurrence kept)
+16508,REJECTED,IMP016507,,title is required
+16514,REJECTED,,Physics fundamentals volume 16513,accession_no is required
+16530,REJECTED,IMP016529,Geography fundamentals volume 16529,isbn is not 10 or 13 digits
+16542,REJECTED,IMP016541,Computing fundamentals volume 16541,year is not a valid year
+16554,DUPLICATE,IMP016503,Geography fundamentals volume 16553,accession_no repeated earlier in the file (first occurrence kept)
+16608,REJECTED,IMP016607,,title is required
+16614,REJECTED,,Geography fundamentals volume 16613,accession_no is required
+16630,REJECTED,IMP016629,Mathematics fundamentals volume 16629,isbn is not 10 or 13 digits
+16642,REJECTED,IMP016641,Economics fundamentals volume 16641,year is not a valid year
+16654,DUPLICATE,IMP016603,Economics fundamentals volume 16653,accession_no repeated earlier in the file (first occurrence kept)
+16708,REJECTED,IMP016707,,title is required
+16714,REJECTED,,Geography fundamentals volume 16713,accession_no is required
+16730,REJECTED,IMP016729,Geography fundamentals volume 16729,isbn is not 10 or 13 digits
+16742,REJECTED,IMP016741,Philosophy fundamentals volume 16741,year is not a valid year
+16754,DUPLICATE,IMP016703,History fundamentals volume 16753,accession_no repeated earlier in the file (first occurrence kept)
+16808,REJECTED,IMP016807,,title is required
+16814,REJECTED,,Philosophy fundamentals volume 16813,accession_no is required
+16830,REJECTED,IMP016829,Philosophy fundamentals volume 16829,isbn is not 10 or 13 digits
+16842,REJECTED,IMP016841,Computing fundamentals volume 16841,year is not a valid year
+16854,DUPLICATE,IMP016803,History fundamentals volume 16853,accession_no repeated earlier in the file (first occurrence kept)
+16908,REJECTED,IMP016907,,title is required
+16914,REJECTED,,Chemistry fundamentals volume 16913,accession_no is required
+16930,REJECTED,IMP016929,Biology fundamentals volume 16929,isbn is not 10 or 13 digits
+16942,REJECTED,IMP016941,Mathematics fundamentals volume 16941,year is not a valid year
+16954,DUPLICATE,IMP016903,Literature fundamentals volume 16953,accession_no repeated earlier in the file (first occurrence kept)
+17008,REJECTED,IMP017007,,title is required
+17014,REJECTED,,History fundamentals volume 17013,accession_no is required
+17030,REJECTED,IMP017029,Philosophy fundamentals volume 17029,isbn is not 10 or 13 digits
+17042,REJECTED,IMP017041,Chemistry fundamentals volume 17041,year is not a valid year
+17054,DUPLICATE,IMP017003,Literature fundamentals volume 17053,accession_no repeated earlier in the file (first occurrence kept)
+17108,REJECTED,IMP017107,,title is required
+17114,REJECTED,,Mathematics fundamentals volume 17113,accession_no is required
+17130,REJECTED,IMP017129,Literature fundamentals volume 17129,isbn is not 10 or 13 digits
+17142,REJECTED,IMP017141,Economics fundamentals volume 17141,year is not a valid year
+17154,DUPLICATE,IMP017103,Geography fundamentals volume 17153,accession_no repeated earlier in the file (first occurrence kept)
+17208,REJECTED,IMP017207,,title is required
+17214,REJECTED,,Geography fundamentals volume 17213,accession_no is required
+17230,REJECTED,IMP017229,History fundamentals volume 17229,isbn is not 10 or 13 digits
+17242,REJECTED,IMP017241,Physics fundamentals volume 17241,year is not a valid year
+17254,DUPLICATE,IMP017203,Economics fundamentals volume 17253,accession_no repeated earlier in the file (first occurrence kept)
+17308,REJECTED,IMP017307,,title is required
+17314,REJECTED,,Chemistry fundamentals volume 17313,accession_no is required
+17330,REJECTED,IMP017329,Chemistry fundamentals volume 17329,isbn is not 10 or 13 digits
+17342,REJECTED,IMP017341,Biology fundamentals volume 17341,year is not a valid year
+17354,DUPLICATE,IMP017303,Chemistry fundamentals volume 17353,accession_no repeated earlier in the file (first occurrence kept)
+17408,REJECTED,IMP017407,,title is required
+17414,REJECTED,,Economics fundamentals volume 17413,accession_no is required
+17430,REJECTED,IMP017429,History fundamentals volume 17429,isbn is not 10 or 13 digits
+17442,REJECTED,IMP017441,Geography fundamentals volume 17441,year is not a valid year
+17454,DUPLICATE,IMP017403,History fundamentals volume 17453,accession_no repeated earlier in the file (first occurrence kept)
+17508,REJECTED,IMP017507,,title is required
+17514,REJECTED,,Physics fundamentals volume 17513,accession_no is required
+17530,REJECTED,IMP017529,Philosophy fundamentals volume 17529,isbn is not 10 or 13 digits
+17542,REJECTED,IMP017541,Biology fundamentals volume 17541,year is not a valid year
+17554,DUPLICATE,IMP017503,Mathematics fundamentals volume 17553,accession_no repeated earlier in the file (first occurrence kept)
+17608,REJECTED,IMP017607,,title is required
+17614,REJECTED,,History fundamentals volume 17613,accession_no is required
+17630,REJECTED,IMP017629,Computing fundamentals volume 17629,isbn is not 10 or 13 digits
+17642,REJECTED,IMP017641,Philosophy fundamentals volume 17641,year is not a valid year
+17654,DUPLICATE,IMP017603,Economics fundamentals volume 17653,accession_no repeated earlier in the file (first occurrence kept)
+17708,REJECTED,IMP017707,,title is required
+17714,REJECTED,,Economics fundamentals volume 17713,accession_no is required
+17730,REJECTED,IMP017729,Computing fundamentals volume 17729,isbn is not 10 or 13 digits
+17742,REJECTED,IMP017741,Economics fundamentals volume 17741,year is not a valid year
+17754,DUPLICATE,IMP017703,Biology fundamentals volume 17753,accession_no repeated earlier in the file (first occurrence kept)
+17808,REJECTED,IMP017807,,title is required
+17814,REJECTED,,Philosophy fundamentals volume 17813,accession_no is required
+17830,REJECTED,IMP017829,Literature fundamentals volume 17829,isbn is not 10 or 13 digits
+17842,REJECTED,IMP017841,Philosophy fundamentals volume 17841,year is not a valid year
+17854,DUPLICATE,IMP017803,Chemistry fundamentals volume 17853,accession_no repeated earlier in the file (first occurrence kept)
+17908,REJECTED,IMP017907,,title is required
+17914,REJECTED,,Economics fundamentals volume 17913,accession_no is required
+17930,REJECTED,IMP017929,Physics fundamentals volume 17929,isbn is not 10 or 13 digits
+17942,REJECTED,IMP017941,Geography fundamentals volume 17941,year is not a valid year
+17954,DUPLICATE,IMP017903,Geography fundamentals volume 17953,accession_no repeated earlier in the file (first occurrence kept)
+18008,REJECTED,IMP018007,,title is required
+18014,REJECTED,,Economics fundamentals volume 18013,accession_no is required
+18030,REJECTED,IMP018029,Geography fundamentals volume 18029,isbn is not 10 or 13 digits
+18042,REJECTED,IMP018041,Physics fundamentals volume 18041,year is not a valid year
+18054,DUPLICATE,IMP018003,Geography fundamentals volume 18053,accession_no repeated earlier in the file (first occurrence kept)
+18108,REJECTED,IMP018107,,title is required
+18114,REJECTED,,Geography fundamentals volume 18113,accession_no is required
+18130,REJECTED,IMP018129,Physics fundamentals volume 18129,isbn is not 10 or 13 digits
+18142,REJECTED,IMP018141,Computing fundamentals volume 18141,year is not a valid year
+18154,DUPLICATE,IMP018103,Philosophy fundamentals volume 18153,accession_no repeated earlier in the file (first occurrence kept)
+18208,REJECTED,IMP018207,,title is required
+18214,REJECTED,,Biology fundamentals volume 18213,accession_no is required
+18230,REJECTED,IMP018229,Physics fundamentals volume 18229,isbn is not 10 or 13 digits
+18242,REJECTED,IMP018241,Chemistry fundamentals volume 18241,year is not a valid year
+18254,DUPLICATE,IMP018203,Computing fundamentals volume 18253,accession_no repeated earlier in the file (first occurrence kept)
+18308,REJECTED,IMP018307,,title is required
+18314,REJECTED,,Economics fundamentals volume 18313,accession_no is required
+18330,REJECTED,IMP018329,Mathematics fundamentals volume 18329,isbn is not 10 or 13 digits
+18342,REJECTED,IMP018341,Biology fundamentals volume 18341,year is not a valid year
+18354,DUPLICATE,IMP018303,Computing fundamentals volume 18353,accession_no repeated earlier in the file (first occurrence kept)
+18408,REJECTED,IMP018407,,title is required
+18414,REJECTED,,History fundamentals volume 18413,accession_no is required
+18430,REJECTED,IMP018429,History fundamentals volume 18429,isbn is not 10 or 13 digits
+18442,REJECTED,IMP018441,Computing fundamentals volume 18441,year is not a valid year
+18454,DUPLICATE,IMP018403,Mathematics fundamentals volume 18453,accession_no repeated earlier in the file (first occurrence kept)
+18508,REJECTED,IMP018507,,title is required
+18514,REJECTED,,Geography fundamentals volume 18513,accession_no is required
+18530,REJECTED,IMP018529,Literature fundamentals volume 18529,isbn is not 10 or 13 digits
+18542,REJECTED,IMP018541,Economics fundamentals volume 18541,year is not a valid year
+18554,DUPLICATE,IMP018503,Biology fundamentals volume 18553,accession_no repeated earlier in the file (first occurrence kept)
+18608,REJECTED,IMP018607,,title is required
+18614,REJECTED,,Economics fundamentals volume 18613,accession_no is required
+18630,REJECTED,IMP018629,Biology fundamentals volume 18629,isbn is not 10 or 13 digits
+18642,REJECTED,IMP018641,History fundamentals volume 18641,year is not a valid year
+18654,DUPLICATE,IMP018603,Philosophy fundamentals volume 18653,accession_no repeated earlier in the file (first occurrence kept)
+18708,REJECTED,IMP018707,,title is required
+18714,REJECTED,,Geography fundamentals volume 18713,accession_no is required
+18730,REJECTED,IMP018729,Mathematics fundamentals volume 18729,isbn is not 10 or 13 digits
+18742,REJECTED,IMP018741,Chemistry fundamentals volume 18741,year is not a valid year
+18754,DUPLICATE,IMP018703,Mathematics fundamentals volume 18753,accession_no repeated earlier in the file (first occurrence kept)
+18808,REJECTED,IMP018807,,title is required
+18814,REJECTED,,Chemistry fundamentals volume 18813,accession_no is required
+18830,REJECTED,IMP018829,Mathematics fundamentals volume 18829,isbn is not 10 or 13 digits
+18842,REJECTED,IMP018841,Computing fundamentals volume 18841,year is not a valid year
+18854,DUPLICATE,IMP018803,Chemistry fundamentals volume 18853,accession_no repeated earlier in the file (first occurrence kept)
+18908,REJECTED,IMP018907,,title is required
+18914,REJECTED,,History fundamentals volume 18913,accession_no is required
+18930,REJECTED,IMP018929,Chemistry fundamentals volume 18929,isbn is not 10 or 13 digits
+18942,REJECTED,IMP018941,Mathematics fundamentals volume 18941,year is not a valid year
+18954,DUPLICATE,IMP018903,Geography fundamentals volume 18953,accession_no repeated earlier in the file (first occurrence kept)
+19008,REJECTED,IMP019007,,title is required
+19014,REJECTED,,Mathematics fundamentals volume 19013,accession_no is required
+19030,REJECTED,IMP019029,Mathematics fundamentals volume 19029,isbn is not 10 or 13 digits
+19042,REJECTED,IMP019041,Literature fundamentals volume 19041,year is not a valid year
+19054,DUPLICATE,IMP019003,Chemistry fundamentals volume 19053,accession_no repeated earlier in the file (first occurrence kept)
+19108,REJECTED,IMP019107,,title is required
+19114,REJECTED,,Mathematics fundamentals volume 19113,accession_no is required
+19130,REJECTED,IMP019129,Literature fundamentals volume 19129,isbn is not 10 or 13 digits
+19142,REJECTED,IMP019141,Biology fundamentals volume 19141,year is not a valid year
+19154,DUPLICATE,IMP019103,History fundamentals volume 19153,accession_no repeated earlier in the file (first occurrence kept)
+19208,REJECTED,IMP019207,,title is required
+19214,REJECTED,,History fundamentals volume 19213,accession_no is required
+19230,REJECTED,IMP019229,Literature fundamentals volume 19229,isbn is not 10 or 13 digits
+19242,REJECTED,IMP019241,Mathematics fundamentals volume 19241,year is not a valid year
+19254,DUPLICATE,IMP019203,Economics fundamentals volume 19253,accession_no repeated earlier in the file (first occurrence kept)
+19308,REJECTED,IMP019307,,title is required
+19314,REJECTED,,Philosophy fundamentals volume 19313,accession_no is required
+19330,REJECTED,IMP019329,History fundamentals volume 19329,isbn is not 10 or 13 digits
+19342,REJECTED,IMP019341,Philosophy fundamentals volume 19341,year is not a valid year
+19354,DUPLICATE,IMP019303,Mathematics fundamentals volume 19353,accession_no repeated earlier in the file (first occurrence kept)
+19408,REJECTED,IMP019407,,title is required
+19414,REJECTED,,Geography fundamentals volume 19413,accession_no is required
+19430,REJECTED,IMP019429,Economics fundamentals volume 19429,isbn is not 10 or 13 digits
+19442,REJECTED,IMP019441,Literature fundamentals volume 19441,year is not a valid year
+19454,DUPLICATE,IMP019403,Physics fundamentals volume 19453,accession_no repeated earlier in the file (first occurrence kept)
+19508,REJECTED,IMP019507,,title is required
+19514,REJECTED,,Economics fundamentals volume 19513,accession_no is required
+19530,REJECTED,IMP019529,Physics fundamentals volume 19529,isbn is not 10 or 13 digits
+19542,REJECTED,IMP019541,Economics fundamentals volume 19541,year is not a valid year
+19554,DUPLICATE,IMP019503,Philosophy fundamentals volume 19553,accession_no repeated earlier in the file (first occurrence kept)
+19608,REJECTED,IMP019607,,title is required
+19614,REJECTED,,Chemistry fundamentals volume 19613,accession_no is required
+19630,REJECTED,IMP019629,Economics fundamentals volume 19629,isbn is not 10 or 13 digits
+19642,REJECTED,IMP019641,Mathematics fundamentals volume 19641,year is not a valid year
+19654,DUPLICATE,IMP019603,Chemistry fundamentals volume 19653,accession_no repeated earlier in the file (first occurrence kept)
+19708,REJECTED,IMP019707,,title is required
+19714,REJECTED,,Geography fundamentals volume 19713,accession_no is required
+19730,REJECTED,IMP019729,Computing fundamentals volume 19729,isbn is not 10 or 13 digits
+19742,REJECTED,IMP019741,Computing fundamentals volume 19741,year is not a valid year
+19754,DUPLICATE,IMP019703,Economics fundamentals volume 19753,accession_no repeated earlier in the file (first occurrence kept)
+19808,REJECTED,IMP019807,,title is required
+19814,REJECTED,,Biology fundamentals volume 19813,accession_no is required
+19830,REJECTED,IMP019829,Literature fundamentals volume 19829,isbn is not 10 or 13 digits
+19842,REJECTED,IMP019841,Physics fundamentals volume 19841,year is not a valid year
+19854,DUPLICATE,IMP019803,Geography fundamentals volume 19853,accession_no repeated earlier in the file (first occurrence kept)
+19908,REJECTED,IMP019907,,title is required
+19914,REJECTED,,History fundamentals volume 19913,accession_no is required
+19930,REJECTED,IMP019929,Literature fundamentals volume 19929,isbn is not 10 or 13 digits
+19942,REJECTED,IMP019941,Philosophy fundamentals volume 19941,year is not a valid year
+19954,DUPLICATE,IMP019903,Geography fundamentals volume 19953,accession_no repeated earlier in the file (first occurrence kept)

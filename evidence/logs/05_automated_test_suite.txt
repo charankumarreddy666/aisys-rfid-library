@@ -1,0 +1,79 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe manage.py test tests -v 2
+
+Found 29 test(s).
+Operations to perform:
+  Synchronize unmigrated apps: interop, messages, reports, staticfiles
+  Apply all migrations: admin, auth, catalog, circulation, contenttypes, core, members, migration_tool, notifications, rfid, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying migration_tool.0001_initial... OK
+  Applying catalog.0001_initial... OK
+  Applying catalog.0002_fulltext_index... OK
+  Applying members.0001_initial... OK
+  Applying circulation.0001_initial... OK
+  Applying core.0001_initial... OK
+  Applying notifications.0001_initial... OK
+  Applying rfid.0001_initial... OK
+  Applying sessions.0001_initial... OK
+System check identified no issues (0 silenced).
+
+--- stderr ---
+Creating test database for alias 'default' ('C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\test_data\test_db.sqlite3')...
+
+Destroying old test database for alias 'default' ('C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\test_data\test_db.sqlite3')...
+
+test_blocked_member_and_fine_limit (tests.test_all.CirculationTests.test_blocked_member_and_fine_limit) ... ok
+test_checkout_checkin_renew_cycle_and_history (tests.test_all.CirculationTests.test_checkout_checkin_renew_cycle_and_history) ... ok
+test_fine_limit_is_configurable (tests.test_all.CirculationTests.test_fine_limit_is_configurable) ... ok
+test_overdue_checkin_creates_fine (tests.test_all.CirculationTests.test_overdue_checkin_creates_fine) ... ok
+test_reference_item_blocked (tests.test_all.CirculationTests.test_reference_item_blocked) ... ok
+test_renewal_limit (tests.test_all.CirculationTests.test_renewal_limit) ... ok
+test_ncip_flow (tests.test_all.InteropTests.test_ncip_flow) ... ok
+test_ncip_problem_and_security (tests.test_all.InteropTests.test_ncip_problem_and_security) ... ok
+test_sip2_flow (tests.test_all.InteropTests.test_sip2_flow) ... ok
+test_preferences_and_retry (tests.test_all.NotificationTests.test_preferences_and_retry) ... ok
+test_checked_out_item_passes_gate (tests.test_all.RfidTests.test_checked_out_item_passes_gate) ... ok
+test_gate_api_requires_key (tests.test_all.RfidTests.test_gate_api_requires_key) ... ok
+test_gate_unauthorised_removal_and_duplicate (tests.test_all.RfidTests.test_gate_unauthorised_removal_and_duplicate) ... ok
+test_gate_works_with_lms_offline_cache (tests.test_all.RfidTests.test_gate_works_with_lms_offline_cache) ... ok
+test_inventory_missing_and_misplaced (tests.test_all.RfidTests.test_inventory_missing_and_misplaced) ... ok
+test_tagging_validates_and_links (tests.test_all.RfidTests.test_tagging_validates_and_links) ... ok
+test_audit_log_is_append_only (tests.test_all.SearchAndUiTests.test_audit_log_is_append_only) ... ok
+test_dashboard_reports_and_csv (tests.test_all.SearchAndUiTests.test_dashboard_reports_and_csv) ... ok
+test_health_and_opac_public (tests.test_all.SearchAndUiTests.test_health_and_opac_public) ... ok
+test_log_masking (tests.test_all.SearchAndUiTests.test_log_masking) ... ok
+test_realtime_index (tests.test_all.SearchAndUiTests.test_realtime_index) ... ok
+test_smartcard_login_and_rbac (tests.test_all.SearchAndUiTests.test_smartcard_login_and_rbac) ... ok
+test_corrupt_backup_is_refused (tests.test_all.MigrationTests.test_corrupt_backup_is_refused) ... ok
+test_dry_run_commit_reconcile_rollback (tests.test_all.MigrationTests.test_dry_run_commit_reconcile_rollback) ... ok
+test_failed_migration_then_restore_proves_data_intact (tests.test_all.MigrationTests.test_failed_migration_then_restore_proves_data_intact) ... ok
+test_apply_then_rollback (tests.test_all.UpdateTests.test_apply_then_rollback) ... ok
+test_rollback_ignores_already_rolled_back_snapshots (tests.test_all.UpdateTests.test_rollback_ignores_already_rolled_back_snapshots) ... ok
+test_same_version_and_unsafe_path_refused (tests.test_all.UpdateTests.test_same_version_and_unsafe_path_refused) ... ok
+test_tampered_package_rejected (tests.test_all.UpdateTests.test_tampered_package_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 128.904s
+
+OK
+Destroying test database for alias 'default' ('C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\test_data\test_db.sqlite3')...
+

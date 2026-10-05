@@ -1,0 +1,5 @@
+$ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe manage.py seed_demo
+
+Demo data ready. Users: admin, librarian1, circdesk1, viewer1  (password = DEMO_PASSWORD, default Demo#12345)
+Smart cards: 04AA000001..04AA000004. Members M0001-M0008 (M0003 blocked, M0004 fines above limit).
+Items ACC000001-ACC000008, barcodes BC000001-BC000008, tags E200000000000001.. (hex).
