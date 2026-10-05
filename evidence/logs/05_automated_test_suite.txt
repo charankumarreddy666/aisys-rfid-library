@@ -72,7 +72,7 @@ test_same_version_and_unsafe_path_refused (tests.test_all.UpdateTests.test_same_
 test_tampered_package_rejected (tests.test_all.UpdateTests.test_tampered_package_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 29 tests in 128.904s
+Ran 29 tests in 83.775s
 
 OK
 Destroying test database for alias 'default' ('C:\Users\chara\Desktop\AISYS\aisys-rfid-library\evidence\test_data\test_db.sqlite3')...

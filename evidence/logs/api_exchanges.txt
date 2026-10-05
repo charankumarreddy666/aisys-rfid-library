@@ -2,7 +2,7 @@
 GET /health
 
 -> HTTP 200
-{"status": "ok", "version": "1.0.0", "database": "ok", "items": 8, "rfid_mode": "mock", "lms_online": true, "time": "2026-10-05T04:47:54.313673+00:00"}
+{"status": "ok", "version": "1.0.0", "database": "ok", "items": 8, "rfid_mode": "mock", "lms_online": true, "time": "2026-10-05T04:57:51.737352+00:00"}
 
 ### No key
 POST /interop/ncip
@@ -14,13 +14,13 @@ invalid or missing X-API-Key
 POST /interop/ncip
 <NCIPMessage xmlns="http://www.niso.org/2008/ncip"><CheckOutItem><UserId><UserIdentifierValue>M0002</UserIdentifierValue></UserId><ItemId><ItemIdentifierValue>BC000005</ItemIdentifierValue></ItemId></CheckOutItem></NCIPMessage>
 -> HTTP 200
-<?xml version="1.0" encoding="UTF-8"?><NCIPMessage xmlns="http://www.niso.org/2008/ncip"><CheckOutItemResponse><ItemId><ItemIdentifierValue>BC000005</ItemIdentifierValue></ItemId><UserId><UserIdentifierValue>M0002</UserIdentifierValue></UserId><DateDue>2026-10-19T04:47:54Z</DateDue></CheckOutItemResponse></NCIPMessage>
+<?xml version="1.0" encoding="UTF-8"?><NCIPMessage xmlns="http://www.niso.org/2008/ncip"><CheckOutItemResponse><ItemId><ItemIdentifierValue>BC000005</ItemIdentifierValue></ItemId><UserId><UserIdentifierValue>M0002</UserIdentifierValue></UserId><DateDue>2026-10-19T04:57:51Z</DateDue></CheckOutItemResponse></NCIPMessage>
 
 ### NCIP RenewItem
 POST /interop/ncip
 <NCIPMessage xmlns="http://www.niso.org/2008/ncip"><RenewItem><UserId><UserIdentifierValue></UserIdentifierValue></UserId><ItemId><ItemIdentifierValue>BC000005</ItemIdentifierValue></ItemId></RenewItem></NCIPMessage>
 -> HTTP 200
-<?xml version="1.0" encoding="UTF-8"?><NCIPMessage xmlns="http://www.niso.org/2008/ncip"><RenewItemResponse><ItemId><ItemIdentifierValue>BC000005</ItemIdentifierValue></ItemId><DateForReturn>2026-11-02T04:47:54Z</DateForReturn></RenewItemResponse></NCIPMessage>
+<?xml version="1.0" encoding="UTF-8"?><NCIPMessage xmlns="http://www.niso.org/2008/ncip"><RenewItemResponse><ItemId><ItemIdentifierValue>BC000005</ItemIdentifierValue></ItemId><DateForReturn>2026-11-02T04:57:51Z</DateForReturn></RenewItemResponse></NCIPMessage>
 
 ### NCIP CheckInItem
 POST /interop/ncip
@@ -56,19 +56,19 @@ POST /interop/ncip
 POST /interop/sip2
 11NN20261005    000000                  AOlib|AAM0002|ABBC000006|
 -> HTTP 200
-121NNY20261005    101754AOlib|AAM0002|ABBC000006|AJComputer Networks|AH20261019    044754|AFOK|
+121NNY20261005    102751AOlib|AAM0002|ABBC000006|AJComputer Networks|AH20261019    045751|AFOK|
 
 ### SIP2 renew (29)
 POST /interop/sip2
 29NN20261005    000000                  AOlib|AAM0002|ABBC000006|
 -> HTTP 200
-300NNY20261005    101754AOlib|AAM0002|ABBC000006|AJComputer Networks|AH20261102    044754|AFOK|
+300NNY20261005    102752AOlib|AAM0002|ABBC000006|AJComputer Networks|AH20261102    045751|AFOK|
 
 ### SIP2 checkin (09)
 POST /interop/sip2
 09N20261005    00000020261005    000000AOlib|ABBC000006|
 -> HTTP 200
-101YNN20261005    101754AOlib|ABBC000006|AQB-02|AAM0002|AFOK|
+101YNN20261005    102752AOlib|ABBC000006|AQB-02|AAM0002|AFOK|
 
 ### Gate: unauthorised item
 POST /rfid/api/gate
@@ -92,7 +92,7 @@ POST /rfid/api/gate
 GET /rfid/api/gate-cache
 
 -> HTTP 200
-{"generated": "2026-10-05T04:47:57.000439+00:00", "tags": {"E200000000000001": {"secured": true, "accession": "ACC000001"}, "E200000000000002": {"secured": true, "accession": "ACC000002"}, "E200000000000003": {"secured": true, "accession": "ACC000003"}, "E200000000000004": {"secured": true, "accession": "ACC000004"}, "E200000000000005": {"secured": true, "accession": "ACC000005"}, "E200000000000006": {"secured": true, "accession": "ACC000006"}, "E200000000000007": {"secured": true, "accession": "ACC000007"}, "E200000000000008": {"secured": true, "accession": "ACC000008"}}}
+{"generated": "2026-10-05T04:57:53.463746+00:00", "tags": {"E200000000000001": {"secured": true, "accession": "ACC000001"}, "E200000000000002": {"secured": true, "accession": "ACC000002"}, "E200000000000003": {"secured": true, "accession": "ACC000003"}, "E200000000000004": {"secured": true, "accession": "ACC000004"}, "E200000000000005": {"secured": true, "accession": "ACC000005"}, "E200000000000006": {"secured": true, "accession": "ACC000006"}, "E200000000000007": {"secured": true, "accession": "ACC000007"}, "E200000000000008": {"secured": true, "accession": "ACC000008"}}}
 
 ### Gate with LMS offline
 POST /rfid/api/gate
