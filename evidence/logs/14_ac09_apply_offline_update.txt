@@ -4,6 +4,6 @@ $ C:\Users\chara\Desktop\AISYS\aisys-rfid-library\venv\Scripts\python.exe manage
   "from": "1.0.0",
   "to": "1.0.1",
   "snapshot": "1.0.0_to_1.0.1",
-  "db_backup": "20261005-102724-980061_pre-update-1.0.1.sqlite3"
+  "db_backup": "20261005-103916-595909_pre-update-1.0.1.sqlite3"
 }
 Update applied. Restart the web server. To undo: python manage.py rollback_update
